@@ -971,7 +971,7 @@ a:hover {
 
 @media (max-width: 767px) {
   .bg-image {
-    background-size: contain;
+    background-size: 1200px 850px;
   }
 }
 
