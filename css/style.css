@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
 body {
-  background-color: #333;
-  color: #333;
+  font-family: 'Montserrat', sans-serif;
+  background: #333;
+  color: #fff;
 }
+
 
 h1,
 h2,
@@ -9,11 +13,11 @@ h3,
 h4,
 h5,
 h6 {
-  color: #0A2E5F;
+  color: #87CEEB;
 }
 
 .link-skill {
-  color: #0A2E5F;
+  color: #87CEEB;
 }
 
 a {
@@ -53,7 +57,7 @@ a:hover {
 .skill-box,
 .work-box,
 .card-blog {
-  box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0);
 }
 
 .box-shadow-a,
@@ -92,7 +96,7 @@ a:hover {
   padding: 0;
   height: 100%;
   width: 100%;
-  opacity: .7;
+
 }
 
 .paralax-mf {
@@ -148,7 +152,7 @@ a:hover {
 }
 
 .subtitle-a {
-  color: #333;
+  color: #fff;
 }
 
 .line-mf {
@@ -207,7 +211,7 @@ a:hover {
   background-color: #888;
   margin-bottom: 3rem;
   z-index: 2;
-  box-shadow: 0 0.2px 0.2px 1px #333, 0 0.2px 0.2px 0 #333;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
   border-radius: 0.8%;
 }
 
@@ -420,7 +424,7 @@ a:hover {
 }
 
 .navbar-b.navbar-reduce {
-  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.01);
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.01);
   border-radius: 0, 7%;
 }
 
@@ -721,27 +725,28 @@ a:hover {
   background-color: #0A2E5F;
 }
 
-/*======================================
-//--//-->   Skills
-======================================*/
+
+/*Skills*/
 
 .skill-box {
-  background-color: #fff;
+  background-color: rgba(0, 0, 0, 0.1);
   padding: 2.5rem 1.3rem;
   border-radius: 1rem;
   margin-bottom: 3rem;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  height: 370px;
 }
 
 .skill-box:hover .ico-circle {
   transition: all 500ms ease;
   color: #fff;
   background-color: #87CEEB;
-  box-shadow: 0 0 0 10px #bbf5df;
+  box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .skill-box .skill-ico {
   margin-bottom: 1rem;
-  color: #0A2E5F;
+  color: #fff;
 }
 
 .skill-box .ico-circle {
@@ -754,12 +759,14 @@ a:hover {
   text-transform: uppercase;
   text-align: center;
   padding: .4rem 0;
-  color: #0A2E5F;
+  color: #87CEEB;
 }
 
 .skill-box .s-description {
-  color: #333;
+  color: rgba(243, 236, 236, 0.8);
 }
+
+
 
 /*======================================
 //--//-->   COUNTER
@@ -788,7 +795,7 @@ a:hover {
 
 
 /*======================================
-//--//-->   TESTIMONIALS
+//--//-->   Academic Exchange
 ======================================*/
 
 .testimonials .owl-carousel .owl-item img {
@@ -814,7 +821,7 @@ a:hover {
 }
 
 .testimonial-box .author {
-  color: #0A2E5F;
+  color: #87CEEB;
   text-transform: uppercase;
   font-weight: 600;
   margin: 1rem 0;
@@ -824,8 +831,8 @@ a:hover {
 
 .testimonial-box .comit {
   font-size: 2rem;
-  color: #333;
-  background-color: #fff;
+  color: #87CEEB;
+  background-color: #333;
   width: 52px;
   height: 52px;
   display: block;
@@ -882,7 +889,7 @@ a:hover {
   height: 16px;
   top: 48px;
   right: -8px;
-  background: #ffffff;
+  background: rgba(0, 0, 0, 0.2);
   border: 2px solid #888;
   border-radius: 16px;
   z-index: 1;
@@ -933,16 +940,15 @@ a:hover {
 
 .experience .timeline .timeline-text {
   padding: 30px;
-  background: #ffffff;
   position: relative;
-  border-right: 5px solid #dddddd;
-  box-shadow: 0 0 60px rgba(0, 0, 0, .08);
+  border-right: 5px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
   border-radius: 3%;
 }
 
 .experience .timeline .timeline-item.right .timeline-text {
   border-right: none;
-  border-left: 5px solid #dddddd;
+  border-left: 5px solid rgba(0, 0, 0, 0.2);
 }
 
 .experience .timeline .timeline-text h2 {
@@ -1114,7 +1120,7 @@ a:hover {
   margin-top: 4rem;
 }
 
-.form-text{
+.form-text {
   color: #fff;
 }
 
@@ -1147,7 +1153,7 @@ footer .copyright {
   margin-bottom: 15px;
 }
 
-.text-muted{
+.text-muted {
   color: #fff;
 }
 
@@ -1194,6 +1200,31 @@ footer .copyright {
   transition: all 500ms ease;
   cursor: pointer;
 }
+
+.button_lm {
+  background-color: #0A2E5F;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button_lm:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.button_lm:active {
+  transform: translateY(2px);
+  box-shadow: 0 0px 6px rgba(0, 0, 0, 0.3);
+}
+
+
 
 .button:focus {
   outline: 0;
