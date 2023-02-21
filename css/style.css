@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -27,6 +27,71 @@ h6 {
 .link-skill {
   color: #f95959;
 }
+
+/* Mouse scroll effect */
+.mouse {
+  position: absolute;
+  bottom: 40px;
+  z-index: 5;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  display: block; }
+  .mouse .mouse-icon {
+    display: block;
+    width: 25px;
+    height: 45px;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 15px;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    -webkit-transition: .3s all ease-in-out;
+    -o-transition: .3s all ease-in-out;
+    transition: .3s all ease-in-out; }
+  .mouse .mouse-wheel {
+    height: 4px;
+    margin: 2px auto 0;
+    display: block;
+    width: 4px;
+    background-color: white;
+    border-radius: 50%;
+    -webkit-animation: 1.6s ease infinite wheel-up-down;
+    -moz-animation: 1.6s ease infinite wheel-up-down;
+    animation: 1.6s ease infinite wheel-up-down; }
+  .mouse:hover .mouse-icon {
+    border-color: #fff; }
+
+@-webkit-keyframes wheel-up-down {
+  0% {
+    margin-top: 2px;
+    opacity: 0; }
+  30% {
+    opacity: 1; }
+  100% {
+    margin-top: 20px;
+    opacity: 0; } }
+
+@-moz-keyframes wheel-up-down {
+  0% {
+    margin-top: 2px;
+    opacity: 0; }
+  30% {
+    opacity: 1; }
+  100% {
+    margin-top: 20px;
+    opacity: 0; } }
+
+@keyframes wheel-up-down {
+  0% {
+    margin-top: 2px;
+    opacity: 0; }
+  30% {
+    opacity: 1; }
+  100% {
+    margin-top: 20px;
+    opacity: 0; } }
 
 a {
   color: #f95959;
@@ -219,12 +284,25 @@ a:hover {
 .box-shadow-full {
   padding: 3rem 1.25rem;
   position: relative;
-  background-color: #455d7a;
+  background-color: rgba(69, 93, 122, 0.2);
   margin-bottom: 3rem;
   z-index: 2;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
   border-radius: 0.8%;
 }
+
+.about-left-wrapper,
+.about-right-wrapper {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  padding: 3rem 1.25rem;
+  position: relative;
+  z-index: 2;
+  border-radius: 0.8%;
+  margin-bottom: 3rem;
+  background-color: rgba(69, 93, 122, 0.2);
+  height: 650px;
+}
+
 
 /*------/ Socials /------*/
 
@@ -742,7 +820,7 @@ a:hover {
 /*Skills*/
 
 .skill-box {
-  background-color: rgba(34, 33, 33, 0.65);
+  background-color: rgba(69, 93, 122, 0.2);
   padding: 2.5rem 1.3rem;
   border-radius: 1rem;
   margin-bottom: 3rem;
@@ -815,7 +893,7 @@ a:hover {
   width: 100%;
   object-fit: cover;
   opacity: 0.5;
- }
+}
 
 /*******************************/
 /******* Experience CSS ********/
@@ -843,19 +921,21 @@ a:hover {
 
 .experience .timeline .timeline-item {
   position: relative;
-  background: transparent;
+  background: rgba(69, 93, 122, 0.2);
   width: 50%;
   margin-bottom: 30px;
 }
 
 .experience .timeline .timeline-item.left {
   left: 0;
+  background: transparent;
   padding-right: 30px;
 }
 
 .experience .timeline .timeline-item.right {
   left: 50%;
   padding-left: 30px;
+  background: transparent;
 }
 
 .experience .timeline .timeline-item::after {
@@ -865,8 +945,8 @@ a:hover {
   height: 16px;
   top: 48px;
   right: -8px;
-  background: #455d7a;
-  border: 2px solid #455d7a;
+  background: rgba(69, 93, 122, 0.2);
+  border: 2px solid rgba(69, 93, 122, 0.2);
   border-radius: 16px;
   z-index: 1;
 }
@@ -884,14 +964,12 @@ a:hover {
   right: 10px;
   z-index: 1;
   border: 10px solid;
-  border-color: transparent transparent transparent transparent;
-  border-color: transparent transparent transparent rgba(0, 0, 0, 0.2);
+  border-color: transparent transparent transparent rgba(69, 93, 122, 0.2);
 }
 
 .experience .timeline .timeline-item.right::before {
   left: 10px;
-  border-color: transparent transparent transparent transparent;
-  border-color: transparent rgba(0, 0, 0, 0.2) transparent transparent;
+  border-color: transparent rgba(69, 93, 122, 0.2) transparent transparent;
 }
 
 .experience .timeline .timeline-date {
@@ -919,14 +997,15 @@ a:hover {
 .experience .timeline .timeline-text {
   padding: 30px;
   position: relative;
-  border-right: 1px solid #455d7a;
-  box-shadow: 0px 0px 10px 0px #455d7a;
+  border-right: 1px solid rgba(69, 93, 122, 0.2);
+  box-shadow: 0px 0px 10px 0px rgba(69, 93, 122, 0.2) inset;
   border-radius: 3%;
 }
 
+
 .experience .timeline .timeline-item.right .timeline-text {
   border-right: none;
-  border-left: 1px solid #455d7a;
+  border-left: 1px solid rgba(69, 93, 122, 0.2);
 }
 
 .experience .timeline .timeline-text h2 {
@@ -950,8 +1029,8 @@ a:hover {
 @media only screen and (max-width: 600px) {
   .bg-image {
     background-size: cover contain;
-    }
   }
+}
 
 
 @media (max-width: 767.98px) {
@@ -1041,64 +1120,13 @@ a:hover {
   margin-left: 40px;
 }
 
-/*------/ Sidebar /------*/
-
-.widget-sidebar .sidebar-title {
-  font-size: 1.6rem;
-  font-weight: 600;
-  border-left: 5px solid #455d7a;
-  padding-left: 15px;
-  text-transform: uppercase;
-  margin-bottom: 1.5rem;
-}
-
-.widget-sidebar .list-sidebar li {
-  position: relative;
-  padding: 6px 0 6px 24px;
-}
-
-.widget-sidebar .list-sidebar li:before {
-  position: absolute;
-  content: "";
-  width: 10px;
-  height: 1px;
-  left: 0;
-  background-color: #455d7a;
-  top: 20px;
-}
-
-.sidebar-search input {
-  background-color: #e3e3e3;
-  border-radius: 3%;
-  transition: all 0.5s ease-in-out;
-}
-
-.sidebar-search .btn-search {
-  background-color: #455d7a;
-  border-color: #455d7a;
-  border-radius: 0;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.widget-tags ul li {
-  display: inline-block;
-  background-color: #455d7a;
-  padding: .2rem .6rem;
-  margin-bottom: .5rem;
-  border-radius: 15px;
-}
-
-.widget-tags ul li a {
-  color: #e3e3e3;
-}
 
 /*======================================
 //--//-->   CONTACT
 ======================================*/
 
 .footer-paralax {
-  padding: 4rem 0 0 0;
+  padding: 0 0 0 0;
 }
 
 .contact-mf {
@@ -1197,7 +1225,7 @@ footer .copyright {
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  }
+}
 
 .button_lm:hover {
   transform: translateY(-3px);
