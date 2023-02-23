@@ -321,7 +321,7 @@ a:hover {
   position: relative;
   z-index: 2;
   margin-bottom: 3rem;
-  height: 650px;
+  height: auto;
   border-radius: 50px;
   background: linear-gradient(145deg, #202c3b, #253447);
   box-shadow: 26px 26px 52px #1d2937,
