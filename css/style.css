@@ -180,7 +180,7 @@ a:hover {
   width: 50%;
   object-fit: cover;
   opacity: 0.3;
-  background: 
+  background:
     linear-gradient(45deg, transparent 25%, #5f5858 25%, #5f5858 50%, transparent 50%, transparent 75%, #5f5858 75%, #5f5858 100%),
     linear-gradient(90deg, transparent 25%, #1d1c1c 25%, #1d1c1c 50%, transparent 50%, transparent 75%, #1d1c1c 75%, #1d1c1c 100%);
   /* Adicione quantos gradientes você quiser para criar o padrão desejado */
@@ -770,7 +770,9 @@ a:hover {
 }
 
 .intro .overlay-itro {
-  background-color: #e3e3e3; padding: 20px; box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background-color: #e3e3e3;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   position: absolute;
   top: 0;
   left: 0px;
@@ -813,7 +815,7 @@ a:hover {
 .intro-single .breadcrumb {
   background-color: #f8f9fa;
   padding: 20px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .intro-single .breadcrumb .breadcrumb-item:before {
@@ -1218,6 +1220,20 @@ footer .copyright {
     padding: 0 13rem;
   }
 }
+
+
+@media (min-width: 1367px) {
+  #skill {
+    margin-top: 200px;
+  }
+
+  .about-left-wrapper {
+    height: 120%;
+    width: 90%;
+  }
+
+}
+
 
 @media (max-width: 768px) {
   .back-to-top {
