@@ -1387,3 +1387,20 @@ a:hover, .nav-link:hover {
     linear-gradient(45deg, transparent 25%, #ffbe0b 25%, #fb5607 50%, transparent 50%, transparent 75%, #ffbe0b 75%, #fb5607 100%),
     linear-gradient(90deg, transparent 25%, #ffbe0b 25%, #fb5607 50%, transparent 50%, transparent 75%, #ffbe0b 75%, #fb5607 100%) !important;
 }
+
+#portfolio.bg-dark {
+  background-color: #f7f8fa !important; /* Light pastel background */
+  color: #4a4a4a !important; /* Adjust text color for contrast */
+}
+
+#Exchange .about-left-wrapper2,
+#Exchange .about-right-wrapper2 {
+  width: 100% !important; /* Ensure the content fits within mobile boundaries */
+  margin-bottom: 1rem !important; /* Add spacing for better mobile view */
+}
+
+.img-Exchange {
+  width: 100% !important; /* Adjust image width to fit smaller screens */
+  margin: auto !important; /* Center the image */
+}
+
