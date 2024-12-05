@@ -32,6 +32,14 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 
+  <!-- Owl Carousel CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+<!-- Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
   <!-- Ads -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6493796424174642"
     crossorigin="anonymous"></script>
@@ -62,6 +70,12 @@
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll" href="#Exchange">Academic Exchange</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#updates">Updates</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll" href="#contact">Contact</a>
@@ -284,64 +298,50 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="work-box">
-          <a href="https://diegobadelli.github.io/personalwebsite/" target="_blank" class="d-block">
-            <div class="work-img">
+      <div class="col-12">
+        <div id="portfolio-carousel" class="owl-carousel owl-theme">
+          <!-- Project 1 -->
+          <div class="item">
+            <a href="https://diegobadelli.github.io/personalwebsite/" target="_blank" class="d-block">
               <img src="img/firstone.png" alt="Project 1" class="img-fluid">
-            </div>
-            <div class="work-content">
-              <h2 class="w-title">First Website Project</h2>
+              <h4 class="w-title">First Website Project</h4>
               <p class="w-description">Personal Profile Website using CSS and HTML.</p>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="work-box">
-          <a href="https://assertividade-ils7iw9oy-diegobadelli.vercel.app/" target="_blank" class="d-block">
-            <div class="work-img">
+            </a>
+          </div>
+          <!-- Project 2 -->
+          <div class="item">
+            <a href="https://assertividade-ils7iw9oy-diegobadelli.vercel.app/" target="_blank" class="d-block">
               <img src="img/assertividade.png" alt="Project 2" class="img-fluid">
-            </div>
-            <div class="work-content">
-              <h2 class="w-title">Quizzes</h2>
+              <h4 class="w-title">Quizzes</h4>
               <p class="w-description">Creation of a Quiz on assertiveness.</p>
+            </a>
+          </div>
+          <!-- Project 3 -->
+          <div class="item">
+            <div>
+              <iframe width="100%" height="200px" src="https://www.youtube.com/embed/b-DxWMPwmFg" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+              </iframe>
+              <h4 class="w-title">Shorts</h4>
+              <p class="w-description">Made for more - Portuguese.</p>
             </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="work-box">
-          <div class="work-img">
-            <iframe width="100%" height="200px" src="https://www.youtube.com/embed/b-DxWMPwmFg"
-              title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen>
-            </iframe>
           </div>
-          <div class="work-content">
-            <h2 class="w-title">Shorts</h2>
-            <p class="w-description">Made for more - Portuguese.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="work-box">
-          <a href="https://lnkd.in/d2quTe7M" target="_blank" class="d-block">
-            <div class="work-img">
+          <!-- Project 4 -->
+          <div class="item">
+            <a href="https://lnkd.in/d2quTe7M" target="_blank" class="d-block">
               <img src="img/googlecert.jpg" alt="Project 4" class="img-fluid">
-            </div>
-            <div class="work-content">
-              <h2 class="w-title">Data Analytics Certification</h2>
+              <h4 class="w-title">Data Analytics Certification</h4>
               <p class="w-description">Google Data Analytics Professional Certificate.</p>
-            </div>
-          </a>
+            </a>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 <!--/ Portfolio section End /-->
+
 
 
   <!--/ Latest Updates Section Start /-->

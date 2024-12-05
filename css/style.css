@@ -1404,3 +1404,24 @@ a:hover, .nav-link:hover {
   margin: auto !important; /* Center the image */
 }
 
+#portfolio {
+  background: linear-gradient(45deg, #ffbe0b, #fb5607); /* Gradiente laranja */
+  color: white; /* Texto branco para contraste */
+  padding: 4rem 0; /* Ajuste no espaçamento */
+}
+
+#portfolio-carousel .item {
+  background: rgba(255, 255, 255, 0.1); /* Fundo transparente */
+  border-radius: 15px;
+  padding: 1rem;
+  text-align: center;
+  color: white;
+}
+#portfolio-carousel .item h4 {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+}
+#portfolio-carousel .item p {
+  font-size: 1rem;
+  color: #f1f1f1;
+}

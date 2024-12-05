@@ -101,6 +101,22 @@
 		});
 	}
 
+	$(document).ready(function() {
+		$("#portfolio-carousel").owlCarousel({
+		  items: 3,
+		  margin: 20,
+		  loop: true,
+		  autoplay: true,
+		  autoplayTimeout: 3000,
+		  responsive: {
+			0: { items: 1 },
+			768: { items: 2 },
+			1200: { items: 3 }
+		  }
+		});
+	  });
+	  
+
 	/*--/ Testimonials owl /--*/
 	$('#testimonial-mf').owlCarousel({
 		margin: 20,
