@@ -51,7 +51,7 @@
 			target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
 			if (target.length) {
 				$('html, body').animate({
-					scrollTop: (target.offset().top - navHeight + 5)
+					scrollTop: target.offset().top - 60 // Desconta a altura da navbar
 				}, 1000, "easeInOutExpo");
 				return false;
 			}
