@@ -811,7 +811,8 @@ a:hover {
 }
 
 .navbar-collapse {
-  background-color: rgba(255, 255, 255, 0.95); /* Fundo branco semitransparente */
+  background-color: rgba(255, 255, 255, 0.95);
+  /* Fundo branco semitransparente */
 }
 
 /*======================================
@@ -1390,62 +1391,61 @@ h6 {
     width: 100%;
     margin-bottom: 2rem;
   }
-}
+
+  .button {
+    background: linear-gradient(45deg, #3a86ff, #ff006e);
+    color: white;
+  }
 
 
-.button {
-  background: linear-gradient(45deg, #3a86ff, #ff006e);
-  color: white;
-}
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f7f8fa !important;
+    color: #4a4a4a !important;
+  }
 
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #2c2c2c !important;
+  }
 
-body {
-  font-family: 'Montserrat', sans-serif;
-  background-color: #f7f8fa !important;
-  color: #4a4a4a !important;
-}
+  a,
+  .nav-link {
+    color: #3a86ff !important;
+  }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #2c2c2c !important;
-}
+  a:hover,
+  .nav-link:hover {
+    color: #ff006e !important;
+  }
 
-a,
-.nav-link {
-  color: #3a86ff !important;
-}
+  .btn,
+  .button,
+  .button_lm {
+    background: linear-gradient(45deg, #3a86ff, #ff006e) !important;
+    color: white !important;
+    border: none !important;
+  }
 
-a:hover,
-.nav-link:hover {
-  color: #ff006e !important;
-}
+  .overlay-itro {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+  }
 
-.btn,
-.button,
-.button_lm {
-  background: linear-gradient(45deg, #3a86ff, #ff006e) !important;
-  color: white !important;
-  border: none !important;
-}
+  .skill-box,
+  .skill-box2 {
+    background: linear-gradient(45deg, #ffbe0b, #fb5607) !important;
+  }
 
-.overlay-itro {
-  background-color: rgba(255, 255, 255, 0.9) !important;
-}
-
-.skill-box,
-.skill-box2 {
-  background: linear-gradient(45deg, #ffbe0b, #fb5607) !important;
-}
-
-.bg-image {
-  opacity: 0.6 !important;
-  background:
-    linear-gradient(45deg, transparent 25%, #ffbe0b 25%, #fb5607 50%, transparent 50%, transparent 75%, #ffbe0b 75%, #fb5607 100%),
-    linear-gradient(90deg, transparent 25%, #ffbe0b 25%, #fb5607 50%, transparent 50%, transparent 75%, #ffbe0b 75%, #fb5607 100%) !important;
+  .bg-image {
+    opacity: 0.6 !important;
+    background:
+      linear-gradient(45deg, transparent 25%, #ffbe0b 25%, #fb5607 50%, transparent 50%, transparent 75%, #ffbe0b 75%, #fb5607 100%),
+      linear-gradient(90deg, transparent 25%, #ffbe0b 25%, #fb5607 50%, transparent 50%, transparent 75%, #ffbe0b 75%, #fb5607 100%) !important;
+  }
 }
 
 #portfolio.bg-dark {
