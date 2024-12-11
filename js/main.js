@@ -101,20 +101,53 @@
 		});
 	}
 
-	$(document).ready(function() {
-		$("#portfolio-carousel").owlCarousel({
-		  items: 3,
-		  margin: 20,
-		  loop: true,
-		  autoplay: true,
-		  autoplayTimeout: 3000,
-		  responsive: {
-			0: { items: 1 },
-			768: { items: 2 },
-			1200: { items: 3 }
-		  }
+	// Lazy Load Portfolio Carousel
+	const lazyLoadCarousel = () => {
+		const portfolioSection = document.querySelector("#portfolio");
+		if (!portfolioSection) {
+			console.warn("Portfolio section not found.");
+			return;
+		}
+
+		const observer = new IntersectionObserver((entries) => {
+			if (entries[0].isIntersecting) {
+				$("#portfolio-carousel").owlCarousel({
+					items: 3,
+					margin: 20,
+					loop: true,
+					autoplay: true,
+					autoplayTimeout: 3000,
+					responsive: {
+						0: { items: 1 },
+						768: { items: 2 },
+						1200: { items: 3 }
+					}
+				});
+				observer.disconnect(); // Stop observing after initializing the carousel
+			}
 		});
-	  });
+
+		observer.observe(portfolioSection);
+	};
+
+	// Check browser support and initialize
+	if ('IntersectionObserver' in window) {
+		lazyLoadCarousel();
+	} else {
+		console.warn("IntersectionObserver not supported. Initializing carousel immediately.");
+		$("#portfolio-carousel").owlCarousel({
+			items: 3,
+			margin: 20,
+			loop: true,
+			autoplay: true,
+			autoplayTimeout: 3000,
+			responsive: {
+				0: { items: 1 },
+				768: { items: 2 },
+				1200: { items: 3 }
+			}
+		});
+	}
 	  
 
 	/*--/ Testimonials owl /--*/
