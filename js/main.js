@@ -150,6 +150,17 @@
 		});
 	}
 
+	window.addEventListener('scroll', function () {
+		const hero = document.querySelector('.hero-section');
+		let scrollPosition = window.scrollY;
+		hero.style.backgroundPositionY = `${scrollPosition * 0.5}px`;
+	});
+
+	document.addEventListener('DOMContentLoaded', function() {
+		const video = document.querySelector('.video-bg');
+		video.load();
+	  });
+	  
 
 	/*--/ Testimonials owl /--*/
 	$('#testimonial-mf').owlCarousel({

@@ -41,11 +41,7 @@ a:hover {
   text-decoration: none;
 }
 
-#home {
-  position:-webkit-sticky;
-  background-image: url(../img/bannerfirst.jpg);
-  background-size: cover;
-}
+
 
 .link-skill {
   color: #2c2c2c;
@@ -259,6 +255,13 @@ a:hover {
   font-weight: 400;
   text-transform: uppercase;
   color: rgb(0, 0, 0);
+}
+
+.title-skill {
+  font-size: 36px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #fff;
 }
 
 
@@ -757,7 +760,7 @@ a:hover {
 ======================================*/
 
 .lead {
-  color: #4a4a4a;
+  color: #fff;
   font-size: 1.0rem;
 }
 
@@ -1242,61 +1245,6 @@ h6 {
     width: 100%;
     margin-bottom: 2rem;
   }
-
-  .button {
-    background: linear-gradient(45deg, #3a86ff, #ff006e);
-    color: white;
-  }
-
-
-  body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #f7f8fa !important;
-    color: #4a4a4a !important;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    color: #2c2c2c !important;
-  }
-
-  a,
-  .nav-link {
-    color: #3a86ff !important;
-  }
-
-  a:hover,
-  .nav-link:hover {
-    color: #ff006e !important;
-  }
-
-  .btn,
-  .button,
-  .button_lm {
-    background: linear-gradient(45deg, #3a86ff, #ff006e) !important;
-    color: white !important;
-    border: none !important;
-  }
-
-  .overlay-itro {
-    background-color: rgba(255, 255, 255, 0.9) !important;
-  }
-
-  .skill-box,
-  .skill-box2 {
-    background: linear-gradient(45deg, #ffbe0b, #fb5607) !important;
-  }
-
-  .bg-image {
-    opacity: 0.6 !important;
-    background:
-      linear-gradient(45deg, transparent 25%, #ffbe0b 25%, #fb5607 50%, transparent 50%, transparent 75%, #ffbe0b 75%, #fb5607 100%),
-      linear-gradient(90deg, transparent 25%, #ffbe0b 25%, #fb5607 50%, transparent 50%, transparent 75%, #ffbe0b 75%, #fb5607 100%) !important;
-  }
 }
 
 #portfolio.bg-dark {
@@ -1509,4 +1457,106 @@ h6 {
 
 #blog-posts .card {
   margin-bottom: 2rem;
+}
+
+.hero-section {
+  height: 100vh;
+  position: relative;
+  /* Remove background as the video will replace it */
+}
+
+/* General Video Background */
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video fills the space without distortion */
+  z-index: -1; /* Places the video behind content */
+}
+
+/* Overlay for Readability */
+.overlay-itro {
+  background-color: rgba(36, 32, 32, 0.6); /* Dark overlay */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.intro-title {
+  color: #ffffff;
+  font-size: 4rem;
+  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+  animation: fadeIn 2s ease-in-out;
+}
+
+#dynamic-text {
+  font-size: 1.5rem;
+  color: #ffffff;
+  animation: typing 3.5s steps(40, end) infinite;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #ffffff;
+}
+
+.mouse .mouse-icon {
+  border-color: rgba(255, 255, 255, 0.8);
+  animation: bounce 2s infinite;
+}
+
+/* Keyframes */
+@keyframes typing {
+  0% { width: 0; }
+  50% { width: 100%; }
+  100% { width: 0; }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-10px); }
+  60% { transform: translateY(-5px); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .video-bg {
+    display: none; /* Hide the video */
+  }
+
+  .hero-section {
+    background: url('../img/bannerfirst.jpg') no-repeat center center;
+    background-size: cover; /* Use a static image instead */
+  }
+
+  .intro-title {
+    font-size: 2.5rem; /* Reduce text size */
+  }
+
+  #dynamic-text {
+    font-size: 1rem; /* Adjust text size */
+  }
+}
+
+@media (max-width: 480px) {
+  .intro-title {
+    font-size: 2rem;
+  }
+
+  #dynamic-text {
+    font-size: 0.9rem;
+  }
+
+  .mouse .mouse-icon {
+    width: 20px;
+    height: 35px;
+  }
 }
