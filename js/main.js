@@ -130,6 +130,7 @@
 		observer.observe(portfolioSection);
 	};
 
+
 	// Check browser support and initialize
 	if ('IntersectionObserver' in window) {
 		lazyLoadCarousel();

@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 title: "Exploring the World of Machine Learning",
                 excerpt: "Discover the fundamentals and transformative potential of machine learning in this article.",
                 image: "img/blog1.png",
-                link: "blog.html",
+                link: "articles/Machine_Learning.html",
                 date: "2024-12-15",
             },
             {
@@ -18,30 +18,9 @@ document.addEventListener("DOMContentLoaded", function () {
             {
                 title: "Wire Drawing",
                 excerpt: "Participation in the Technical Symposium on Wire Drawing by the company Niehoff-Herborn.",
-                image: "img/simposio.jpg",
+                image: "img/wire_draw.webp",
                 link: "https://www.linkedin.com/posts/diegobadelli_trefilaaexaeto-inovaaexaetoindustrial-lideranaexaempresarial-activity-7094845687451803649-fHVh?utm_source=share&utm_medium=member_desktop",
                 date: "2024-12-15",
-            },
-            {
-                title: "The Power of Machine Learning",
-                excerpt: "Discover how machine learning is transforming industries and enabling smarter decisions.",
-                image: "img/machine-learning.jpg",
-                link: "#",
-                date: "2024-12-15",
-            },
-            {
-                title: "Optimizing Manufacturing Processes",
-                excerpt: "A deep dive into modern techniques for improving efficiency in production lines.",
-                image: "img/manufacturing.jpg",
-                link: "#",
-                date: "2024-11-20",
-            },
-            {
-                title: "A Guide to Data Visualization",
-                excerpt: "Learn how to turn complex data into meaningful and actionable insights.",
-                image: "img/data-visualization.jpg",
-                link: "#",
-                date: "2024-10-30",
             },
         ];
 
