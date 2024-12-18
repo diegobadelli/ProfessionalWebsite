@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const blogContainer = document.getElementById("blog-posts");
         blogPosts.forEach((post) => {
             const blogCard = `
-                <div class="col-6 col-sm-4 col-lg-2">
+                <div class="col-12 col-sm-6 col-lg-2.4">
                     <div class="card">
                         <img src="${post.image}" class="card-img-top" alt="${post.title}">
                         <div class="card-body">
