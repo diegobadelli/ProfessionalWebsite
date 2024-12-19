@@ -100,63 +100,66 @@
             <h4>1. Master the Box Model</h4>
             <p>The CSS Box Model is fundamental. Every HTML element is a box, consisting of margins, borders, padding,
                 and content. Understand this to control spacing and layout effectively.</p>
-            <pre><code>/* Example of Box Model properties */
-div {
-    margin: 10px; /* Space outside the element */
-    border: 2px solid black; /* Border around the element */
-    padding: 5px; /* Space inside the element */
-}</code></pre>
+            <pre><code>
+<span class="selector">div</span> {
+    <span class="property">margin</span>: <span class="number">10px</span>; <span class="comment">/* Space outside the element */</span>
+    <span class="property">border</span>: <span class="string">2px solid black</span>; <span class="comment">/* Border around the element */</span>
+    <span class="property">padding</span>: <span class="number">5px</span>; <span class="comment">/* Space inside the element */</span>
+}
+        </code></pre>
 
             <h4>2. Use Flexbox for Layouts</h4>
             <p>Flexbox simplifies layout design, making it easier to align items. Whether you’re centering elements or
-                creating responsive designs, Flexbox is your best friend.
-            <pre><code>/* Centering content with Flexbox */
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}</code></pre>
-            </p>
+                creating responsive designs, Flexbox is your best friend.</p>
+            <pre><code>
+<span class="selector">.container</span> {
+    <span class="property">display</span>: <span class="keyword">flex</span>;
+    <span class="property">justify-content</span>: <span class="string">center</span>;
+    <span class="property">align-items</span>: <span class="string">center</span>;
+    <span class="property">height</span>: <span class="number">100vh</span>;
+}
+        </code></pre>
 
             <h4>3. Organize Your Styles</h4>
             <p>Keep your CSS clean and organized. Use comments to group related styles and adopt a consistent naming
                 convention for classes.</p>
 
             <h4>4. Leverage Variables</h4>
-            <p>CSS variables help maintain consistency. Define reusable values for colors, fonts, and sizes.
-            <pre><code>:root {
-    --primary-color: #3498db;
-    --font-size: 16px;
+            <p>CSS variables help maintain consistency. Define reusable values for colors, fonts, and sizes.</p>
+            <pre><code>
+<span class="selector">:root</span> {
+    <span class="property">--primary-color</span>: <span class="string">#3498db</span>;
+    <span class="property">--font-size</span>: <span class="number">16px</span>;
 }
 
-button {
-    background-color: var(--primary-color);
-    font-size: var(--font-size);
-}</code></pre>
-            </p>
+<span class="selector">button</span> {
+    <span class="property">background-color</span>: <span class="function">var</span>(<span class="string">--primary-color</span>);
+    <span class="property">font-size</span>: <span class="function">var</span>(<span class="string">--font-size</span>);
+}
+        </code></pre>
 
             <h4>5. Test Responsiveness</h4>
             <p>Ensure your website looks great on all devices. Use media queries to adjust styles for different screen
-                sizes.
-            <pre><code>/* Example media query */
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
+                sizes.</p>
+            <pre><code>
+<span class="keyword">@media</span> (<span class="property">max-width</span>: <span class="number">768px</span>) {
+    <span class="selector">.container</span> {
+        <span class="property">flex-direction</span>: <span class="string">column</span>;
     }
-}</code></pre>
-            </p>
+}
+        </code></pre>
 
             <p>CSS can feel overwhelming at first, but with practice, it becomes second nature. Start experimenting, and
                 don’t hesitate to seek inspiration from design galleries or communities!</p>
         </div>
     </section>
 
+
     <!-- Template Main Javascript File -->
     <script src="js/main.js"></script>
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 My Blog. All rights reserved.</p>
+        <p>&copy; 2024 Diego Badelli. All rights reserved.</p>
     </footer>
 
 </body>
