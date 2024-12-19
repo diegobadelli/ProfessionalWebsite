@@ -9,10 +9,8 @@
 
 html, body {
   font-family: 'Montserrat', sans-serif;
-  background: #fff;
-  color: #4a4a4a;
   margin: 0;
-  height: 100%; /* Ensures 100vh works as intended */
+  height: 100%;
 }
 
 h1,
@@ -236,6 +234,16 @@ a:hover {
   align-items: center;
   padding-top: 60px;
   margin-bottom: 20px;
+}
+
+
+@media (max-width: 768px) {
+  .sect-pt4 {
+    height: o;
+    padding-top: 60px;
+    margin-bottom: 20px;
+    /* Ensure spacing between sections */
+  }
 }
 
 /*--/ Title s /--*/
@@ -490,7 +498,8 @@ a:hover {
 
 .owl-theme .owl-dots {
   text-align: center;
-  margin-top: 18px;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 .owl-theme .owl-dots .owl-dot {
@@ -628,7 +637,7 @@ a:hover {
   top: 0;
   z-index: 1000;
   background-color: rgba(255, 255, 255, 0.9);
-  height: 60px;
+  height: 40px;
   line-height: 60px;
   transition: all 0.5s ease-in-out;
 }
@@ -778,6 +787,8 @@ a:hover {
   margin-right: 10px;
   color: #3a86ff;
   margin-top: 60px;
+  margin-bottom: 60px;
+  padding: 4rem 0
 }
 
 
@@ -931,7 +942,7 @@ a:hover {
   transition: transform 0.3s ease;
   width: 120%;
   max-width: 450px;
-  margin: auto;
+  margin: 60px;
 }
 
 
@@ -1280,7 +1291,6 @@ h6 {
   position: -webkit-sticky;
   /* Texto branco para contraste */
   padding: 4rem 0;
-  margin-bottom: 30px;
 }
 
 #portfolio-carousel .item {
@@ -1301,14 +1311,6 @@ h6 {
   color: #f1f1f1;
 }
 
-@media (max-width: 768px) {
-  .sect-pt4 {
-    height: auto;
-    padding-top: 60px;
-    margin-bottom: 20px;
-    /* Ensure spacing between sections */
-  }
-}
 
 #updates {
   background: #f7f8fa;
@@ -1615,7 +1617,6 @@ pre {
 }
 
 code {
-  background-color: #262626; /* Slightly darker background for inline code */
   color: #f8f8f2; /* Light text color */
   padding: 3px 6px;
   border-radius: 4px;
