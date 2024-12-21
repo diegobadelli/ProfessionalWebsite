@@ -7,7 +7,8 @@
 }
 
 
-html, body {
+html,
+body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   height: 100%;
@@ -20,6 +21,8 @@ h4,
 h5,
 h6 {
   color: #2c2c2c;
+  font-size: 1.5rem;
+  /* Default header size */
 }
 
 p {
@@ -47,16 +50,13 @@ a:hover {
   color: #2c2c2c;
 }
 
-/* Mouse scroll effect */
 .mouse {
   position: absolute;
-  bottom: 40px;
-  z-index: 5;
+  margin-bottom: 20px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
+  /* Center horizontally */
   transform: translateX(-50%);
-  display: block;
+  z-index: 1;
 }
 
 .mouse .mouse-icon {
@@ -68,8 +68,6 @@ a:hover {
   cursor: pointer;
   position: relative;
   text-align: center;
-  -webkit-transition: .3s all ease-in-out;
-  -o-transition: .3s all ease-in-out;
   transition: .3s all ease-in-out;
 }
 
@@ -80,45 +78,7 @@ a:hover {
   width: 4px;
   background-color: white;
   border-radius: 50%;
-  -webkit-animation: 1.6s ease infinite wheel-up-down;
-  -moz-animation: 1.6s ease infinite wheel-up-down;
-  animation: 1.6s ease infinite wheel-up-down;
-}
-
-.mouse:hover .mouse-icon {
-  border-color: #f7f8fa;
-}
-
-@-webkit-keyframes wheel-up-down {
-  0% {
-    margin-top: 2px;
-    opacity: 0;
-  }
-
-  30% {
-    opacity: 1;
-  }
-
-  100% {
-    margin-top: 20px;
-    opacity: 0;
-  }
-}
-
-@-moz-keyframes wheel-up-down {
-  0% {
-    margin-top: 2px;
-    opacity: 0;
-  }
-
-  30% {
-    opacity: 1;
-  }
-
-  100% {
-    margin-top: 20px;
-    opacity: 0;
-  }
+  animation: wheel-up-down 1.6s ease infinite;
 }
 
 @keyframes wheel-up-down {
@@ -136,6 +96,7 @@ a:hover {
     opacity: 0;
   }
 }
+
 
 a {
   color: #2c2c2c;
@@ -227,23 +188,12 @@ a:hover {
 
 .sect-pt4 {
   overflow: hidden;
-  height: 100vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 60px;
-  margin-bottom: 20px;
-}
-
-
-@media (max-width: 768px) {
-  .sect-pt4 {
-    height: o;
-    padding-top: 60px;
-    margin-bottom: 20px;
-    /* Ensure spacing between sections */
-  }
+  min-height: 100vh;
 }
 
 /*--/ Title s /--*/
@@ -259,7 +209,7 @@ a:hover {
 .title-box {
   margin-bottom: 4rem;
   border-radius: 50%;
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 
 .title-a {
@@ -336,7 +286,7 @@ a:hover {
 }
 
 .about-left-wrapper {
-  padding: 3rem 1.25rem;
+  padding: 14rem 0.25rem;
   position: relative;
   margin-bottom: 3rem;
   height: auto;
@@ -345,9 +295,11 @@ a:hover {
   background-image: url(../img/intro-bg.jpg);
   background-size: cover;
   background-position: center center;
-  height: 90%;
+  height:min-content;
   width: 90%;
 }
+
+
 
 
 /*------/ Updates cards /------*/
@@ -408,7 +360,6 @@ a:hover {
   margin-bottom: 3rem;
   height: auto;
   border-radius: 50px;
-  height: 50%;
   width: 100%;
 }
 
@@ -636,10 +587,13 @@ a:hover {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: rgba(255, 255, 255, 0.9);
   height: 40px;
-  line-height: 60px;
+  line-height: 20px;
   transition: all 0.5s ease-in-out;
+  padding: 0.5rem 1rem;
+  /* Adjust padding for better visibility */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Add subtle shadow */
 }
 
 .navbar-b.navbar-reduce {
@@ -697,42 +651,6 @@ a:hover {
 //--//-->   INTRO
 ======================================*/
 
-.intro {
-  height: 100vh;
-  position: relative;
-}
-
-.intro .intro-content {
-  text-align: left;
-  position: absolute;
-}
-
-.intro .overlay-itro {
-  background-color: #4a4a4a;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  position: absolute;
-  top: 0;
-  left: 0px;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-  opacity: .9;
-}
-
-.intro .intro-title {
-  color: #007bff;
-  font-weight: 600;
-  font-size: 4rem;
-  text-transform: capitalize;
-}
-
-.intro .intro-subtitle {
-  font-size: 1.5rem;
-  font-weight: 300;
-  text-transform: capitalize;
-}
-
 .intro .text-slider-items {
   display: none;
 }
@@ -743,11 +661,6 @@ a:hover {
 
 .intro-single .intro-content {
   margin-top: 30px;
-}
-
-.intro-single .intro-title {
-  text-transform: uppercase;
-  font-size: 3rem;
 }
 
 .intro-single .breadcrumb {
@@ -786,9 +699,10 @@ a:hover {
   margin-left: 10px;
   margin-right: 10px;
   color: #3a86ff;
-  margin-top: 60px;
-  margin-bottom: 60px;
-  padding: 4rem 0
+  padding-top: 2rem;
+  /* Reduce top padding */
+  margin-top: 0;
+  /* Remove unnecessary margins */
 }
 
 
@@ -941,7 +855,8 @@ a:hover {
   overflow: hidden;
   transition: transform 0.3s ease;
   width: 120%;
-  max-width: 450px;
+  max-width: 100%;
+  height: auto;
   margin: 60px;
 }
 
@@ -951,8 +866,6 @@ a:hover {
   /* Fundo cinza escuro */
   color: #fff;
   /* Texto branco para contraste */
-  padding: 2rem 0;
-  /* Espaçamento vertical */
 }
 
 .bg-dark .w-title {
@@ -1143,6 +1056,11 @@ footer .copyright {
     padding: 3rem;
   }
 
+  .navbar-b {
+    padding: 0.3rem 0.5rem;
+    /* Reduce padding for smaller screens */
+  }
+
   .navbar-b.navbar-trans .nav-item,
   .navbar-b.navbar-reduce .nav-item {
     padding-left: 10px;
@@ -1151,18 +1069,6 @@ footer .copyright {
   .navbar-b.navbar-trans .nav-link:before,
   .navbar-b.navbar-reduce .nav-link:before {
     margin-left: 18px;
-  }
-
-  .intro .intro-title {
-    font-size: 4.5rem;
-  }
-
-  .intro .intro-subtitle {
-    font-size: 2.5rem;
-  }
-
-  .intro-single .intro-title {
-    font-size: 3.5rem;
   }
 
   .testimonial-box .description {
@@ -1223,16 +1129,6 @@ p,
   /* Larger for better readability */
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: 1.5rem;
-  /* Adjust header sizes */
-}
-
 .navbar-b {
   position: sticky;
   top: 0;
@@ -1289,9 +1185,35 @@ h6 {
   /* Gradiente laranja */
   color: white;
   position: -webkit-sticky;
-  /* Texto branco para contraste */
-  padding: 4rem 0;
 }
+
+.container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.row {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
+.col-12 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+@media (max-width: 576px) {
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .col-12 {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+}
+
 
 #portfolio-carousel .item {
   background: #2c2c2c;
@@ -1300,6 +1222,27 @@ h6 {
   text-align: center;
   color: white;
 }
+
+/* General fix for images in portfolio items */
+#portfolio-carousel .item img {
+  display: block;
+  /* Ensures the image is treated as a block element */
+  max-width: 100%;
+  /* Prevents the image from overflowing horizontally */
+  max-height: 100%;
+  /* Ensures the image doesn’t exceed the height of its container */
+  margin: 0 auto;
+  /* Centers the image horizontally */
+  object-fit: contain;
+  /* Keeps the entire image visible without cropping */
+  height: 200px;
+  /* Fixed height for uniformity (adjust as needed) */
+  width: auto;
+  /* Maintain aspect ratio */
+  border-radius: 10px;
+  /* Match the card's style */
+}
+
 
 #portfolio-carousel .item h4 {
   margin-top: 1rem;
@@ -1438,19 +1381,29 @@ h6 {
 }
 
 .article-content {
-  display: flex; /* Enables flexbox layout */
-  flex-direction: column; /* Stacks children vertically */
-  justify-content: center; /* Centers content vertically */
-  align-items: center; /* Centers content horizontally */
-  min-height: 100vh; /* Ensures the container spans the full viewport height */
-  padding: 20px; /* Adds padding for better spacing */
-  box-sizing: border-box; /* Includes padding in height/width calculations */
-  text-align: justify; /* Justifies the text */
+  display: flex;
+  /* Enables flexbox layout */
+  flex-direction: column;
+  /* Stacks children vertically */
+  justify-content: center;
+  /* Centers content vertically */
+  align-items: center;
+  /* Centers content horizontally */
+  min-height: 100vh;
+  /* Ensures the container spans the full viewport height */
+  padding: 20px;
+  /* Adds padding for better spacing */
+  box-sizing: border-box;
+  /* Includes padding in height/width calculations */
+  text-align: justify;
+  /* Justifies the text */
 }
 
 .article-content h1 {
-  text-align: center; /* Centers the heading */
-  margin-bottom: 20px; /* Adds space below the heading */
+  text-align: center;
+  /* Centers the heading */
+  margin-bottom: 20px;
+  /* Adds space below the heading */
 }
 
 
@@ -1472,10 +1425,26 @@ h6 {
 }
 
 .hero-section {
-  height: 100vh;
   position: relative;
-  /* Remove background as the video will replace it */
+  /* Allows .mouse to be positioned relat
+  height: auto;
+  /* Adjust height dynamically */
+  min-height: 100vh;
+  /* Ensure it fills the viewport at minimum */
+  display: flex;
+  justify-content: center;
+  /* Center horizontally */
+  flex-direction: column;
+  align-items: center;
+  /* Center vertically */
+  padding: 0;
+  /* Remove unnecessary padding */
+  margin: 0;
+  /* Remove unnecessary margin */
+  overflow: hidden;
+
 }
+
 
 .video-bg {
   position: absolute;
@@ -1487,24 +1456,48 @@ h6 {
   /* Ensures the video fills the space without distortion */
   z-index: -1;
   /* Places the video behind content */
+  transform: translateY(0);
+  /* Initial parallax offset */
+  will-change: transform;
+  /* Optimizes performance for animations */
 }
 
 .overlay-itro {
-  background-color: rgba(0, 0, 0, 0.6);
-  /* Dark overlay for better text readability */
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  background-color: #100f0fc4;
+  /* Dark overlay for readability */
   z-index: 0;
 }
 
-.intro-title {
+.intro-content {
+  position: relative;
+  z-index: 1;
+  /* Ensures content is above video and overlay */
   color: #ffffff;
+  margin: 0 auto;
+  /* Center the intro content */
+  padding-bottom: 0;
+  /* Prevent extra spacing at the bottom */
+}
+
+.intro-title {
   font-size: 4rem;
-  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
-  animation: fadeIn 2s ease-in-out;
+  font-weight: bold;
+  color: #ffffff; /* Text color */
+  text-align: center;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); /* Subtle shadow for better readability */
+}
+
+.intro-subtitle {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7); /* Slightly lighter shadow */
 }
 
 #dynamic-text {
@@ -1567,19 +1560,17 @@ h6 {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .video-bg {
-    display: none;
-    /* Hide the video */
-  }
-
-  .hero-section {
-    background: url('../img/bannerfirst.jpg') no-repeat center center;
-    background-size: cover;
-    /* Use a static image instead */
-  }
-
   .intro-title {
-    font-size: 2.5rem;
+    font-size: 3rem;
+    box-shadow: #080808;
+
+    /* Reduce text size */
+  }
+
+  .intro-subtitle {
+    font-size: 2rem;
+    box-shadow: #080808;
+
     /* Reduce text size */
   }
 
@@ -1594,6 +1585,10 @@ h6 {
     font-size: 2rem;
   }
 
+  .intro-subtitle{
+    font-size: 0.4rem;
+  }
+
   #dynamic-text {
     font-size: 0.9rem;
   }
@@ -1603,21 +1598,28 @@ h6 {
     height: 35px;
   }
 }
+
 pre {
-  background-color: #1e1e1e; /* Dark theme background */
-  color: #dcdcdc; /* Default light text color */
+  background-color: #1e1e1e;
+  /* Dark theme background */
+  color: #dcdcdc;
+  /* Default light text color */
   padding: 15px;
   border-radius: 8px;
-  overflow-x: auto; /* Enables horizontal scrolling */
-  font-family: 'Courier New', Courier, monospace; /* Monospace font for code */
+  overflow-x: auto;
+  /* Enables horizontal scrolling */
+  font-family: 'Courier New', Courier, monospace;
+  /* Monospace font for code */
   font-size: 0.9rem;
   line-height: 1.6;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  border: 1px solid #3c3c3c; /* Subtle border for definition */
+  border: 1px solid #3c3c3c;
+  /* Subtle border for definition */
 }
 
 code {
-  color: #f8f8f2; /* Light text color */
+  color: #f8f8f2;
+  /* Light text color */
   padding: 3px 6px;
   border-radius: 4px;
   font-family: 'Courier New', Courier, monospace;
@@ -1626,27 +1628,33 @@ code {
 
 /* Syntax Highlighting (Manual) */
 pre code .keyword {
-  color: #c678dd; /* Purple for keywords (e.g., `for`, `if`) */
+  color: #c678dd;
+  /* Purple for keywords (e.g., `for`, `if`) */
   font-weight: bold;
 }
 
 pre code .string {
-  color: #98c379; /* Green for strings */
+  color: #98c379;
+  /* Green for strings */
 }
 
 pre code .comment {
-  color: #7f848e; /* Grey for comments */
+  color: #7f848e;
+  /* Grey for comments */
   font-style: italic;
 }
 
 pre code .number {
-  color: #d19a66; /* Orange for numbers */
+  color: #d19a66;
+  /* Orange for numbers */
 }
 
 pre code .property {
-  color: #61afef; /* Blue for CSS properties */
+  color: #61afef;
+  /* Blue for CSS properties */
 }
 
 pre code .selector {
-  color: #e06c75; /* Red for CSS selectors */
+  color: #e06c75;
+  /* Red for CSS selectors */
 }

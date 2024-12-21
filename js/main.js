@@ -118,11 +118,14 @@
 					autoplay: true,
 					autoplayTimeout: 3000,
 					responsive: {
-						0: { items: 1 },
-						768: { items: 2 },
-						1200: { items: 3 }
+						0: { items: 1 }, // Phones
+						576: { items: 2 }, // Small tablets
+						992: { items: 3 }, // Larger tablets and small desktops
+						1440: { items: 4 }, // High-resolution desktops
+						1920: { items: 5 } // Ultra-wide screens
 					}
 				});
+
 				observer.disconnect(); // Stop observing after initializing the carousel
 			}
 		});
@@ -143,11 +146,14 @@
 			autoplay: true,
 			autoplayTimeout: 3000,
 			responsive: {
-				0: { items: 1 },
-				768: { items: 2 },
-				1200: { items: 3 }
+				0: { items: 1 }, // Phones
+				576: { items: 2 }, // Small tablets
+				992: { items: 3 }, // Larger tablets and small desktops
+				1440: { items: 4 }, // High-resolution desktops
+				1920: { items: 5 } // Ultra-wide screens
 			}
 		});
+
 	}
 
 	window.addEventListener('scroll', function () {
@@ -156,12 +162,12 @@
 		hero.style.backgroundPositionY = `${scrollPosition * 0.5}px`;
 	});
 
-	document.addEventListener('DOMContentLoaded', function() {
+	document.addEventListener('DOMContentLoaded', function () {
 		const video = document.querySelector('.video-bg');
 		video.load();
-	  });
-	  
+	});
 
+	
 	/*--/ Testimonials owl /--*/
 	$('#testimonial-mf').owlCarousel({
 		margin: 20,
