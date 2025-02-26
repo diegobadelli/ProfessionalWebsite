@@ -6,7 +6,9 @@
   <title>Diego Badelli: Soluções em Engenharia, Tecnologia e SEO</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="engineering, technology, R&D, process optimization, data analytics, music" name="keywords">
-  <meta content="Diego Badelli offers expertise in engineering, technology and music. Discover projects, insights, and services!" name="description">
+  <meta
+    content="Diego Badelli offers expertise in engineering, technology and music. Discover projects, insights, and services!"
+    name="description">
 
   <!-- Schema Markup -->
   <script type="application/ld+json">
@@ -32,8 +34,7 @@
 
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- Bootstrap CSS File -->
-    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <!-- Bootstrap JS -->
@@ -43,7 +44,8 @@
   <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="lib/animate/animate.min.css" rel="stylesheet">
   <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
   <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
   <!-- Main Stylesheet File -->
@@ -54,14 +56,6 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 
-  <!-- Owl Carousel CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-
-  <!-- Owl Carousel JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
   <!-- Ads -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6493796424174642"
     crossorigin="anonymous"></script>
@@ -71,7 +65,7 @@
 <body id="page-top">
 
   <!--/ Nav Start /-->
-  <nav role="navigation" class="navbar navbar-b navbar-trans navbar-expand-md sticky-top" id="mainNav">
+  <nav class="navbar navbar-light bg-light navbar-expand-md fixed-top">
     <div class="container">
       <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
         aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -129,9 +123,9 @@
       </div>
     </div>
   </div>
-  
-  
-  
+
+
+
   <!--/ Intro End /-->
 
   <!--/ Section About Start /-->
@@ -285,7 +279,8 @@
                 <div class="row">
                   <div class="col-sm-6 col-md-7" data-aos="fade-up">
                     <div>
-                      <img src="img/testimonial-2.jpg" class="img-Exchange float-md-left mb-4 mb-md-0" alt="Diego's Badelli Personal picture" loading="lazy">
+                      <img src="img/testimonial-2.jpg" class="img-Exchange float-md-left mb-4 mb-md-0"
+                        alt="Diego's Badelli Personal picture" loading="lazy">
                     </div>
                   </div>
                 </div>
@@ -385,21 +380,22 @@
   </section>
   <!--/ Portfolio section End /-->
 
-  <section id="updates" class="blog-mf">
+  <section id="blog" class="blog-mf">
     <div class="container">
       <div class="row">
         <div class="col-sm-12" data-aos="fade-up">
           <div class="title-box text-center">
-            <h3 class="title-a">Last Updates</h3>
+            <h3 class="title-a">Blog</h3>
             <div class="line-mf"></div>
           </div>
         </div>
       </div>
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-5" id="blog-posts">
-        <!-- Blog posts will be dynamically loaded here -->
+      <div class="row" id="blog-posts">
+        <!-- Os posts serão carregados aqui -->
       </div>
     </div>
   </section>
+
 
 
   <!--/ Section Contact-Footer Start /-->
@@ -532,21 +528,19 @@
   </section>
   <!--/ Section Contact-footer End /-->
 
-
-
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-  <div id="preloader"></div>
-    <!-- JavaScript Libraries -->
-    <script src="lib/jquery/jquery.min.js"></script>
-    <script src="lib/jquery/jquery-migrate.min.js"></script>
-    <script src="lib/popper/popper.min.js"></script>
-    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/counterup/jquery.waypoints.min.js"></script>
-    <script src="lib/counterup/jquery.counterup.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-    <script src="lib/typed/typed.min.js"></script>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/popper/popper.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/counterup/jquery.waypoints.min.js"></script>
+  <script src="lib/counterup/jquery.counterup.js"></script>
+  <script src="lib/jquery.min.js"></script>
+  <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="lib/typed/typed.min.js"></script>
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>

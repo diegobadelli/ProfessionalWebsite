@@ -130,8 +130,6 @@ a:hover {
   color: #2c2c2c;
 }
 
-.box-shadow,
-.paralax-mf,
 .skill-box {
   background: linear-gradient(45deg, #ffbe0b, #fb5607);
   box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0);
@@ -1657,4 +1655,29 @@ pre code .property {
 pre code .selector {
   color: #e06c75;
   /* Red for CSS selectors */
+}
+
+.blog-entry {
+  border-bottom: 1px solid #ddd;
+  padding: 20px 0;
+}
+
+.blog-title {
+  font-size: 24px;
+  color: #333;
+  text-decoration: none;
+}
+
+.blog-title:hover {
+  color: #007bff;
+}
+
+.blog-date {
+  font-size: 14px;
+  color: #666;
+}
+
+.blog-excerpt {
+  font-size: 16px;
+  color: #444;
 }

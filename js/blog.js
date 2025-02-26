@@ -40,19 +40,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const blogContainer = document.getElementById("blog-posts");
         blogPosts.forEach((post) => {
-            const blogCard = `
-                <div class="col-12 col-sm-6 col-lg-2.4">
-                    <div class="card">
-                        <img src="${post.image}" class="card-img-top" alt="${post.title}">
-                        <div class="card-body">
-                            <h5 class="card-title">${post.title}</h5>
-                            <p class="card-text">${post.excerpt}</p>
-                            <a href="${post.link}" class="btn btn-primary">Read More</a>
-                        </div>
+            const blogEntry = `
+                <div class="col-12">
+                    <div class="blog-entry">
+                        <a href="${post.link}">
+                            <h2 class="blog-title">${post.title}</h2>
+                        </a>
+                        <p class="blog-date">${post.date}</p>
+                        <p class="blog-excerpt">${post.excerpt}</p>
                     </div>
                 </div>
             `;
-            blogContainer.innerHTML += blogCard;
+            blogContainer.innerHTML += blogEntry;
         });
     }
 
