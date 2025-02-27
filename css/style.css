@@ -293,7 +293,7 @@ a:hover {
   background-image: url(../img/intro-bg.jpg);
   background-size: cover;
   background-position: center center;
-  height:min-content;
+  height: min-content;
   width: 90%;
 }
 
@@ -580,68 +580,70 @@ a:hover {
   Navbar
 ======================================*/
 
-
-.navbar-b {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  height: 40px;
-  line-height: 20px;
-  transition: all 0.5s ease-in-out;
-  padding: 0.5rem 1rem;
-  /* Adjust padding for better visibility */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  /* Add subtle shadow */
-}
-
-.navbar-b.navbar-reduce {
-  background-color: #f7f8fa;
-  padding: 0.5rem 0;
-  box-shadow: none;
-}
-
-.navbar-b .nav-link {
-  color: #080808;
-  text-transform: uppercase;
-  font-weight: 600;
-  position: relative;
-}
-
-.navbar-b .nav-link:before {
-  content: '';
+/* Navbar Estilizada */
+.navbar {
   position: absolute;
-  width: 0%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #4a4a4a;
-  transition: all 0.5s ease;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  /* Transparente */
+  transition: background 0.3s ease-in-out;
+  padding: 10px 0;
+  z-index: 1000;
 }
 
-.navbar-b .nav-link:hover:before,
-.navbar-b .nav-link.active:before {
-  width: 35px;
+.navbar.scrolled {
+  background: rgba(0, 0, 0, 0.9);
+  /* Mais escura ao rolar a página */
 }
 
-.navbar-toggler span {
-  display: block;
-  background-color: #4a4a4a;
-  height: 3px;
-  width: 25px;
-  margin: 4px 0;
-  transition: all 0.35s ease-in-out;
+.navbar-brand {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
-.navbar-toggler:not(.collapsed) span:nth-child(1) {
-  transform: rotate(135deg);
+.navbar-nav .nav-link {
+  color: #ffffff !important;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
 }
 
-.navbar-toggler:not(.collapsed) span:nth-child(2) {
-  visibility: hidden;
+.navbar-nav .nav-link:hover {
+  color: #f8d210 !important;
+  /* Amarelo suave no hover */
 }
 
-.navbar-toggler:not(.collapsed) span:nth-child(3) {
-  transform: rotate(-135deg);
+/* Botão Hamburguer */
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-color: #ffffff;
+  border-radius: 3px;
+}
+
+/* Ajustes para Mobile */
+@media (max-width: 768px) {
+  .navbar {
+    background: rgba(0, 0, 0, 0.9);
+    /* Fixa escuro no mobile */
+  }
+
+  .navbar-collapse {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 10px;
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 10px 0;
+    display: block;
+  }
 }
 
 
@@ -1424,40 +1426,22 @@ p,
 
 .hero-section {
   position: relative;
-  /* Allows .mouse to be positioned relat
-  height: auto;
-  /* Adjust height dynamically */
-  min-height: 100vh;
-  /* Ensure it fills the viewport at minimum */
+  width: 100%;
+  height: 100vh;
   display: flex;
   justify-content: center;
-  /* Center horizontally */
-  flex-direction: column;
   align-items: center;
-  /* Center vertically */
-  padding: 0;
-  /* Remove unnecessary padding */
-  margin: 0;
-  /* Remove unnecessary margin */
   overflow: hidden;
-
 }
 
-
-.video-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
+.hero-bg {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* Ensures the video fills the space without distortion */
+  position: absolute;
+  top: 0;
+  left: 0;
   z-index: -1;
-  /* Places the video behind content */
-  transform: translateY(0);
-  /* Initial parallax offset */
-  will-change: transform;
-  /* Optimizes performance for animations */
 }
 
 .overlay-itro {
@@ -1466,37 +1450,55 @@ p,
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #100f0fc4;
-  /* Dark overlay for readability */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Adiciona um overlay escuro */
   z-index: 0;
 }
 
 .intro-content {
   position: relative;
   z-index: 1;
-  /* Ensures content is above video and overlay */
   color: #ffffff;
-  margin: 0 auto;
-  /* Center the intro content */
-  padding-bottom: 0;
-  /* Prevent extra spacing at the bottom */
+  text-align: center;
 }
 
 .intro-title {
   font-size: 4rem;
   font-weight: bold;
-  color: #ffffff; /* Text color */
-  text-align: center;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); /* Subtle shadow for better readability */
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+  /* Sombra para melhor legibilidade */
+  color: #fff;
 }
 
 .intro-subtitle {
   font-size: 1.5rem;
   font-weight: 300;
-  color: #ffffff;
-  text-align: center;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7); /* Slightly lighter shadow */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  /* Sombra para melhor leitura */
+  color: #fff
 }
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+  .intro-title {
+    font-size: 3rem;
+  }
+
+  .intro-subtitle {
+    font-size: 1.2rem;
+  }
+
+  #dynamic-text {
+    font-size: 1rem;
+    /* Adjust text size */
+  }
+
+  .mouse .mouse-icon {
+    width: 20px;
+    height: 35px;
+  }
+}
+
 
 #dynamic-text {
   font-size: 1.5rem;
@@ -1553,47 +1555,6 @@ p,
 
   60% {
     transform: translateY(-5px);
-  }
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .intro-title {
-    font-size: 3rem;
-    box-shadow: #080808;
-
-    /* Reduce text size */
-  }
-
-  .intro-subtitle {
-    font-size: 2rem;
-    box-shadow: #080808;
-
-    /* Reduce text size */
-  }
-
-  #dynamic-text {
-    font-size: 1rem;
-    /* Adjust text size */
-  }
-}
-
-@media (max-width: 480px) {
-  .intro-title {
-    font-size: 2rem;
-  }
-
-  .intro-subtitle{
-    font-size: 0.4rem;
-  }
-
-  #dynamic-text {
-    font-size: 0.9rem;
-  }
-
-  .mouse .mouse-icon {
-    width: 20px;
-    height: 35px;
   }
 }
 
@@ -1680,4 +1641,29 @@ pre code .selector {
 .blog-excerpt {
   font-size: 16px;
   color: #444;
+}
+
+.blog-excerpt {
+  font-size: 16px;
+  color: #444;
+  max-height: 80px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+#portfolio-carousel .item {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+#portfolio-carousel .item img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }

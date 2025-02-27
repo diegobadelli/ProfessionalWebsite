@@ -3,12 +3,21 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Diego Badelli: Soluções em Engenharia, Tecnologia e SEO</title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, initial-scale=1, maximum-scale=1">
+  
+  <!-- Adicionar tag canonical -->
+  <link rel="canonical" href="https://diegobadelli.com.br/">
+
+  <!-- Melhorar Open Graph e Twitter Cards -->
+  <meta property="og:title" content="Diego Badelli: Engenharia, Tecnologia e SEO">
+  <meta property="og:description" content="Especialista em engenharia e tecnologia, otimização de processos e data analytics.">
+  <meta property="og:image" content="https://diegobadelli.com.br/img/og-image.jpg">
+  <meta property="og:url" content="https://diegobadelli.com.br/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- SEO Keywords -->
   <meta content="engineering, technology, R&D, process optimization, data analytics, music" name="keywords">
-  <meta
-    content="Diego Badelli offers expertise in engineering, technology and music. Discover projects, insights, and services!"
-    name="description">
 
   <!-- Schema Markup -->
   <script type="application/ld+json">
@@ -29,23 +38,16 @@
   <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/x-icon" href="img/favicon/favicon.ico">
   <link rel="manifest" href="img/favicon/site.webmanifest">
-
-
-  <!-- jQuery -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
   <!-- Libraries CSS Files -->
   <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="lib/animate/animate.min.css" rel="stylesheet">
   <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="owlcarousel/dist/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="owlcarousel/dist/assets/owl.theme.default.min.css">
   <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
   <!-- Main Stylesheet File -->
@@ -59,60 +61,43 @@
   <!-- Ads -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6493796424174642"
     crossorigin="anonymous"></script>
-
 </head>
+
 
 <body id="page-top">
 
-  <!--/ Nav Start /-->
-  <nav class="navbar navbar-light bg-light navbar-expand-md fixed-top">
-    <div class="container">
-      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
-        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link js-scroll active" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll" href="#skill">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll" href="#Exchange">Academic Exchange</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll" href="#portfolio">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll" href="#updates">Updates</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
+<!-- Navbar Start -->
+<nav class="navbar navbar-expand-md fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#home">Diego Badelli</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link js-scroll" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll" href="#skill">Skills</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll" href="#Exchange">Academic Exchange</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll" href="#portfolio">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll" href="#updates">Updates</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll" href="#contact">Contact</a></li>
+      </ul>
     </div>
-  </nav>
-  <!--/ Nav End /-->
+  </div>
+</nav>
+<!-- Navbar End -->
+
 
   <!--/ Intro Start /-->
   <div id="home" class="hero-section">
-    <video autoplay muted loop playsinline class="video-bg">
-      <source src="img/11274341-uhd_3840_2160_25fps.mp4" type="video/mp4" loading="lazy">
-      Your browser does not support the video tag.
-    </video>
+    <img src="img/hero-bg.png" alt="Hero Background" class="hero-bg">
     <div class="overlay-itro"></div>
     <div class="intro-content display-table">
       <div class="table-cell">
         <div class="container">
-          <h1 class="intro-title mb-4">Hi, I'm Diego.</h1>
+          <h1 class="intro-title mb-4">Welcome</h1>
           <p class="intro-subtitle">How can I help you?</p>
         </div>
         <a href="#about" class="mouse smoothscroll">
@@ -123,6 +108,7 @@
       </div>
     </div>
   </div>
+  
 
 
 
@@ -541,6 +527,31 @@
   <script src="owlcarousel/dist/owl.carousel.min.js"></script>
   <script src="lib/lightbox/js/lightbox.min.js"></script>
   <script src="lib/typed/typed.min.js"></script>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#portfolio-carousel").owlCarousel({
+        items: 3,
+        margin: 20,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        nav: true,
+        dots: true,
+        responsive: {
+          0: { items: 1 }, // Celulares
+          576: { items: 2 }, // Tablets pequenos
+          992: { items: 3 }, // Desktops médios
+          1440: { items: 4 }, // Desktops grandes
+        }
+      });
+    });
+  </script>
+  
+
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
