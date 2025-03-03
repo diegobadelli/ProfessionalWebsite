@@ -39,6 +39,9 @@
   <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
   <link rel="manifest" href="img/favicon/site.webmanifest">
 
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <!-- CSS Libraries -->
@@ -97,15 +100,14 @@
         </div>
       </div>
       <!-- End Home Section -->
-
       <!--/ Section About Start /-->
-      <section id="about" class="about-mf sect-pt4">
+      <section id="about" class="about-mf">
         <div class="container">
           <div class="title-box text-center" data-aos="fade-up">
             <h3 class="title-a">About Me</h3>
             <div class="line-mf"></div>
           </div>
-          <div class="about-wrapper">
+          <div class="row about-wrapper">
             <div class="about-left">
               <img src="img/intro-bg.jpg" alt="Diego Badelli" class="about-img">
             </div>
@@ -114,12 +116,12 @@
                 I am a multidisciplinary engineer with solid experience in product development, project management,
                 process optimization, and R&D. I have worked in global environments, collaborating with diverse teams to
                 implement practical solutions aligned with organizational goals.
-
+                <br><br>
                 My background includes leading technical and strategic initiatives, with a focus on data analysis,
                 planning, and continuous improvement. I value cross-functional integration and the pursuit of results
                 that
                 combine efficiency, quality, and innovation.
-
+                <br><br>
                 I believe an analytical and collaborative approach is key to overcoming challenges and driving
                 sustainable
                 organizational growth.
@@ -130,155 +132,87 @@
       </section>
       <!--/ About End /-->
 
+      <!-- Section Skills Start -->
+      <section id="skill">
+        <div class="title-box text-center">
+          <h3 class="title-a">Skills</h3>
+          <div class="line-mf"></div>
+        </div>
 
-      <!--/ Section Skills Start /-->
-      <section id="skill" class="skill-mf">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12" data-aos="fade-up">
-              <div class="title-box text-center">
-                <h3 class="title-skill">
-                  Skills
-                </h3>
-                <div class="line-mf"></div>
-              </div>
+        <div class="skills-container swiper">
+          <div class="swiper-wrapper">
+            <div class="skill-box swiper-slide">
+              <span class="skill-ico">⚡</span>
+              <h2 class="s-title">Electrical Engineering</h2>
+              <p class="s-description">Graduated in Electrical Industrial Engineering with emphasis on Electrotechnics
+                at UTFPR - Universidade Tecnológica Federal do Paraná.</p>
+            </div>
+
+            <div class="skill-box swiper-slide">
+              <span class="skill-ico">⚙️</span>
+              <h2 class="s-title">Process Engineering</h2>
+              <p class="s-description">Postgraduate in Industrial Management with experience in Process Engineering,
+                responsible for LAN cable production in a multinational company.</p>
+            </div>
+
+            <div class="skill-box swiper-slide">
+              <span class="skill-ico">💻</span>
+              <h2 class="s-title">Web Development</h2>
+              <p class="s-description">Excited about new developments in user interaction technologies such as HTML5,
+                CSS3, and JavaScript.</p>
+            </div>
+
+            <div class="skill-box swiper-slide">
+              <span class="skill-ico">📊</span>
+              <h2 class="s-title">Data Analytics</h2>
+              <p class="s-description">Google Data Analytics Professional Certificate: Data cleaning, visualization, and
+                project management.</p>
+            </div>
+
+            <div class="skill-box swiper-slide">
+              <span class="skill-ico">📟</span>
+              <h2 class="s-title">Programming</h2>
+              <p class="s-description">Developing projects using SQL, Python, and R to improve processes.</p>
+            </div>
+
+            <div class="skill-box swiper-slide">
+              <span class="skill-ico">🎵</span>
+              <h2 class="s-title">Music</h2>
+              <p class="s-description">Over 15 years of experience in singing, acoustic guitar, electric guitar, bass,
+                and music production.</p>
             </div>
           </div>
-          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" data-aos="fade-up">
-            <div class="col-md-4">
-              <div class="skill-box">
-                <div class="skill-ico">
-                  <span class="ico-circle"><i class="ion-flash"></i></span>
-                </div>
-                <div class="skill-content">
-                  <h2 class="s-title">Electrical Engineering</h2>
-                  <p class="s-description text-center">
-                    Graduated in Electrical Industrial Engineering with emphasis on Electrotechnics at <a
-                      class="link-skill" href="http://www.utfpr.edu.br/">UTFPR - Universidade Tecnológica Federal do
-                      Paraná</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="skill-box2">
-                <div class="skill-ico">
-                  <span class="ico-circle"><i class="ion-gear-a"></i></span>
-                </div>
-                <div class="skill-content">
-                  <h2 class="s-title">Process Engineering</h2>
-                  <p class="s-description text-center">
-                    Postgraduate in Industrial Management with experience with Process Engineering, being responsible
-                    for
-                    the production of LAN cables in a multinational company.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="skill-box">
-                <div class="skill-ico">
-                  <span class="ico-circle"><i class="ion-ios-monitor-outline"></i></span>
-                </div>
-                <div class="skill-content">
-                  <h2 class="s-title">Web Development</h2>
-                  <p class="s-description text-center">
-                    Curious and excited about what new developments provide in terms of user interaction with
-                    technologies
-                    HTML5, CSS/CSS3 and JavaScript.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="skill-box">
-                <div class="skill-ico">
-                  <span class="ico-circle"><i class="ion-code-working"></i></span>
-                </div>
-                <div class="skill-content">
-                  <h2 class="s-title">Programming</h2>
-                  <p class="s-description text-center">
-                    Study and development of projects in programming languages seeking to improve processes using SQL,
-                    Python and R.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="skill-box2">
-                <div class="skill-ico">
-                  <span class="ico-circle"><i class="ion-stats-bars"></i></span>
-                </div>
-                <div class="skill-content">
-                  <h2 class="s-title">Data Analytics</h2>
-                  <p class="s-description text-center">
-                    Google Data Analytics Professional Certificate: Data cleaning and visualization, project management,
-                    interpreting and communicating data analytic findings.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="skill-box">
-                <div class="skill-ico">
-                  <span class="ico-circle"><i class="ion-headphone"></i></span>
-                </div>
-                <div class="skill-content">
-                  <h2 class="s-title">Music</h2>
-                  <p class="s-description text-center">
-                    More than 15 years of study and practice developing musical skills such as singing, acoustic guitar,
-                    electric guitar, bass and music production programs.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <!-- Pagination & Navigation Buttons -->
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
       </section>
+
+
       <!--/ Section Skills End /-->
 
-      <!--/ Section Exchange Experince Start /-->
-      <section id="Exchange" class="about-mf sect-pt4">
+      <!-- Section Exchange Experience -->
+      <section id="Exchange" class="about-mf">
         <div class="container">
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="about-left-wrapper2">
-                    <div class="row">
-                      <div class="col-sm-6 col-md-7" data-aos="fade-up">
-                        <div>
-                          <img src="img/testimonial-2.jpg" class="img-Exchange float-md-left mb-4 mb-md-0"
-                            alt="Diego's Badelli Personal picture" loading="lazy">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="about-right-wrapper2">
-                    <h5 class="title-left">
-                      Academic exchange
-                    </h5>
-                    <div class="about-me pt-4 pt-md-0" data-aos="fade-up">
-                      <p class="lead2">
-                        With the opportunity to participate in an academic exchange program between 2012 and 2013, I was
-                        able
-                        to deepen my knowledge of electrical engineering at Université de Technologie de
-                        Belfort-Montbeliard
-                        in Belfort, France. This experience further solidified my passion for the field and equipped me
-                        with
-                        a global perspective on electrical engineering that I bring to all my endeavors.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <div class="title-box text-center" data-aos="fade-up">
+            <h3 class="title-a">Academic Exchange</h3>
+            <div class="line-mf"></div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col-lg-6 text-center" data-aos="fade-up">
+              <img src="img/testimonial-2.jpg" class="img-fluid rounded shadow" alt="Diego Badelli Exchange">
+            </div>
+            <div class="col-lg-6" data-aos="fade-up">
+              <p class="lead2">
+                During my academic exchange between 2012 and 2013, I deepened my knowledge of electrical engineering at
+                Université de Technologie de Belfort-Montbeliard in France. This experience provided me with a global
+                perspective and solidified my passion for innovation and problem-solving.
+              </p>
             </div>
           </div>
         </div>
       </section>
-      <!--/ Section Exchange Experince End /-->
 
       <!--/ Portfolio section Start /-->
       <section id="portfolio" class="portfolio-mf">
@@ -286,69 +220,78 @@
           <div class="title-box text-center">
             <h3 class="title-skill">Portfolio</h3>
           </div>
-          <div class="portfolio-grid">
-            <div class="portfolio-item">
-              <a href="https://diegobadelli.github.io/personalwebsite/" target="_blank" class="d-block">
-                <img src="img/firstone.png" alt="Project 1" class="img-fluid" loading="lazy">
-                <h4 class="w-title">First Personal Profile Website</h4>
-                <p class="w-description">Description: A responsive personal profile website built with HTML and
-                  CSS,
-                  designed to highlight professional skills and portfolio projects. The site features a clean,
-                  user-friendly interface and is optimized for both desktop and mobile viewing. Implemented
-                  semantic
-                  HTML to improve accessibility and SEO.
-                  Technologies Used: HTML, CSS, Responsive Design.
-                  Outcome: Improved professional online presence and received positive feedback on its design and
-                  functionality.</p>
-              </a>
+          <div class="row">
+            <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up">
+              <div class="portfolio-item">
+                <a href="https://diegobadelli.github.io/personalwebsite/" target="_blank" class="d-block">
+                  <img src="img/firstone.png" alt="Project 1" class="img-fluid" loading="lazy">
+                  <h4 class="w-title">First Personal Profile Website</h4>
+                  <p class="w-description">A responsive personal profile website built with HTML and
+                    CSS,
+                    designed to highlight professional skills and portfolio projects. The site features a clean,
+                    user-friendly interface and is optimized for both desktop and mobile viewing. Implemented
+                    semantic
+                    HTML to improve accessibility and SEO.
+                    Technologies Used: HTML, CSS, Responsive Design.
+                    Outcome: Improved professional online presence and received positive feedback on its design and
+                    functionality.</p>
+                </a>
+              </div>
             </div>
             <!-- Project 2 -->
-            <div class="item">
-              <a href="https://assertividade-ils7iw9oy-diegobadelli.vercel.app/" target="_blank" class="d-block">
-                <img src="img/assertividade.png" alt="Project 2" class="img-fluid" loading="lazy">
-                <h4 class="w-title">Quizzes</h4>
-                <p class="w-description">Description: Developed an interactive quiz platform to assess
-                  assertiveness
-                  skills. The quiz uses conditional logic to deliver tailored feedback based on user responses,
-                  promoting self-awareness and personal development.
-                  Technologies Used: JavaScript, HTML, CSS.
-                  Outcome: Successfully engaged users by offering a dynamic, self-assessment tool with a
-                  user-friendly
-                  design.</p>
-              </a>
+            <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up">
+              <div class="portfolio-item">
+                <a href="https://assertividade-ils7iw9oy-diegobadelli.vercel.app/" target="_blank" class="d-block">
+                  <img src="img/assertividade.png" alt="Project 2" class="img-fluid" loading="lazy">
+                  <h4 class="w-title">Quizzes</h4>
+                  <p class="w-description">Developed an interactive quiz platform to assess
+                    assertiveness
+                    skills. The quiz uses conditional logic to deliver tailored feedback based on user responses,
+                    promoting self-awareness and personal development.
+                    Technologies Used: JavaScript, HTML, CSS.
+                    Outcome: Successfully engaged users by offering a dynamic, self-assessment tool with a
+                    user-friendly
+                    design.</p>
+                </a>
+              </div>
             </div>
             <!-- Project 3 -->
-            <div class="item">
-              <div>
-                <iframe width="100%" height="200px" src="https://www.youtube.com/embed/b-DxWMPwmFg"
-                  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+            <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up">
+              <div class="portfolio-item">
+                <div>
+                  <iframe width="100%" height="200px" src="https://www.youtube.com/embed/b-DxWMPwmFg"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
                 encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                </iframe>
-                <h4 class="w-title">Shorts</h4>
-                <p class="w-description">Produced a short video titled 'Made for More - Portuguese' for YouTube.
-                </p>
+                  </iframe>
+                  <h4 class="w-title">Shorts</h4>
+                  <p class="w-description">Produced a short video titled 'Made for More - Portuguese' for YouTube.
+                  </p>
+                </div>
               </div>
             </div>
             <!-- Project 4 -->
-            <div class="item">
-              <a href="https://lnkd.in/d2quTe7M" target="_blank" class="d-block">
-                <img src="img/googlecert.jpg" alt="Project 4" class="img-fluid" loading="lazy">
-                <h4 class="w-title">Data Analytics Certification</h4>
-                <p class="w-description">Description: Completed the Google Data Analytics Professional
-                  Certificate,
-                  focusing on data cleaning, visualization, and interpretation. Gained expertise in using tools
-                  like
-                  Excel, Tableau, and SQL to solve real-world problems.
-                  Key Takeaways:
-                  Understanding of end-to-end data analysis processes.
-                  Hands-on experience with data storytelling and visualization techniques.</p>
-              </a>
+            <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up">
+              <div class="portfolio-item">
+                <a href="https://lnkd.in/d2quTe7M" target="_blank" class="d-block">
+                  <img src="img/googlecert.jpg" alt="Project 4" class="img-fluid" loading="lazy">
+                  <h4 class="w-title">Data Analytics Certification</h4>
+                  <p class="w-description">Completed the Google Data Analytics Professional
+                    Certificate,
+                    focusing on data cleaning, visualization, and interpretation. Gained expertise in using tools
+                    like
+                    Excel, Tableau, and SQL to solve real-world problems.
+                    Key Takeaways:
+                    Understanding of end-to-end data analysis processes.
+                    Hands-on experience with data storytelling and visualization techniques.</p>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </section>
       <!--/ Portfolio section End /-->
 
+      <!--/ Blog Section Start /-->
       <section id="blog" class="blog-mf">
         <div class="container">
           <div class="row">
@@ -360,18 +303,23 @@
             </div>
           </div>
           <div class="row" id="blog-posts">
-            <!-- Os posts serão carregados aqui -->
+            <!-- Blog posts will be dynamically loaded here -->
           </div>
         </div>
       </section>
-
-
+      <!--/ Blog Section End /-->
 
       <!--/ Section Contact-Footer Start /-->
-      <section class="paralax-mf footer-paralax sect-pt4">
+      <section class="paralax-mf footer-paralax">
         <div class="overlay-mf"></div>
         <div class="container">
           <div class="row">
+            <div class="col-sm-12" data-aos="fade-up">
+              <div class="title-box text-center">
+                <h3 class="title-a">Contact</h3>
+                <div class="line-mf"></div>
+              </div>
+            </div>
             <div class="col-sm-12" data-aos="fade-up">
               <div class="contact-mf">
                 <div id="contact" class="box-shadow-full">
@@ -459,16 +407,11 @@
                           Let's talk about it and learn more together!
                         </p>
                         <ul class="list-ico lead">
-                          <li><span class="ion-ios-telephone"></span> +55 (41) 998285400</li>
                           <li><span class="ion-email"></span> diego.badelli@gmail.com</li>
                         </ul>
                       </div>
                       <div class="socials">
                         <ul>
-                          <li><a href="https://www.facebook.com/Diego.Badelli"><span class="ico-circle"><i
-                                  class="ion-social-facebook"></i></span></a></li>
-                          <li><a href="https://www.instagram.com/diegobadelli"><span class="ico-circle"><i
-                                  class="ion-social-instagram"></i></span></a></li>
                           <li><a href="https://www.linkedin.com/in/diegobadelli"><span class="ico-circle"><i
                                   class="ion-social-linkedin"></i></span></a></li>
                           <li><a href="https://github.com/diegobadelli"><span class="ico-circle"><i
@@ -513,6 +456,43 @@
   <!-- Main JS -->
   <script src="js/main.js"></script>
   <script src="js/blog.js"></script>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var swiper = new Swiper(".swiper", {
+        slidesPerView: 3, /* Desktop */
+        spaceBetween: 30,
+        loop: true, /* Infinite scrolling */
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 1, /* Mobile - 1 box at a time */
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 2, /* Tablet - 2 boxes */
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 3, /* Desktop - 3 boxes */
+            spaceBetween: 30,
+          }
+        }
+      });
+    });
+
+  </script>
+
 
 </body>
 

@@ -39,15 +39,22 @@ document.addEventListener("DOMContentLoaded", function () {
         ];
 
         const blogContainer = document.getElementById("blog-posts");
+        blogContainer.innerHTML = ""; // Clear previous content
+
         blogPosts.forEach((post) => {
             const blogEntry = `
-                <div class="col-12">
-                    <div class="blog-entry">
+                <div class="col-lg-4 col-md-6 blog-card" data-aos="fade-up">
+                    <div class="card">
                         <a href="${post.link}">
-                            <h2 class="blog-title">${post.title}</h2>
+                            <img src="${post.image}" class="card-img-top" alt="${post.title}">
                         </a>
-                        <p class="blog-date">${post.date}</p>
-                        <p class="blog-excerpt">${post.excerpt}</p>
+                        <div class="card-body">
+                            <a href="${post.link}">
+                                <h5 class="card-title">${post.title}</h5>
+                            </a>
+                            <p class="card-text">${post.excerpt}</p>
+                            <p class="blog-date">${post.date}</p>
+                        </div>
                     </div>
                 </div>
             `;
