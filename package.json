@@ -1,0 +1,37 @@
+{
+  "name": "professionalwebsite",
+  "version": "1.0.0",
+  "description": "Welcome to my personal website repository! This project serves as my digital portfolio, showcasing my expertise in engineering, technology, process optimization, and web development. The website also includes blog posts on technical topics, personal projects, and interactive features.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "uglifyjs js/*.js -o dist/main.min.js",
+    "minify": "uglifyjs js/*.js -o dist/main.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diegobadelli/ProfessionalWebsite.git"
+  },
+  "keywords": ["portfolio", "engineering", "web", "technology"],
+  "author": "Diego Badelli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diegobadelli/ProfessionalWebsite/issues"
+  },
+  "homepage": "https://github.com/diegobadelli/ProfessionalWebsite#readme",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "marked": "^0.3.19",
+    "uglify-js": "^2.8.29"
+  },
+  "devDependencies": {
+    "fstream": "^1.0.12",
+    "handlebars": "^4.7.8",
+    "js-yaml": "^3.14.1",
+    "morgan": "^1.10.0",
+    "tar": "^2.2.2"
+  }
+}
