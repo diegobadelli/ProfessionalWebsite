@@ -752,3 +752,17 @@ footer {
   background: #f8f8f8;
   margin-bottom: 20px;
 }
+
+/* Blog Article Layout */
+.article-content {
+  margin-top: 80px;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.article-content pre {
+  background: #f8f8f8;
+  padding: 1rem;
+  border-radius: 5px;
+  overflow-x: auto;
+}
