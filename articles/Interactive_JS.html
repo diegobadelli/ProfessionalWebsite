@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Tips for Beginners: Style Your Website Like a Pro</title>
-    <meta name="description" content="Essential CSS tips for beginners to improve website styling.">
+    <title>Building Interactive Websites with JavaScript</title>
+    <meta name="description" content="Learn simple techniques to add interactivity to your web projects using JavaScript.">
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
@@ -74,79 +74,31 @@
     <!--/ Nav End /-->
 
     <!-- Article Content -->
-    <section class="article-content">
-        <div class="container">
-            <h1>CSS Tips for Beginners: Style Your Website Like a Pro</h1>
-            <p><strong>Published:</strong> December 18, 2024</p>
-            <img src="../img/css_tips_blog.webp" alt="CSS Tips" class=""><br>
-            <br>
-            <h3>Transform your website design skills with these essential CSS tips tailored for beginners.</h3><br>
-            <p>CSS (Cascading Style Sheets) is the magic that makes websites visually appealing. As an electrical
-                engineer and tech enthusiast, I’ve explored CSS to design intuitive interfaces for projects. Here are my
-                top tips to enhance your CSS skills:</p>
-
-            <h4>1. Master the Box Model</h4>
-            <p>The CSS Box Model is fundamental. Every HTML element is a box, consisting of margins, borders, padding,
-                and content. Understand this to control spacing and layout effectively.</p>
-            <pre><code class="language-css">
-div {
-    margin: 10px; /* Space outside the element */
-    border: 2px solid black; /* Border around the element */
-    padding: 5px; /* Space inside the element */
-}
+<section class="article-content">
+    <div class="container">
+        <h1>Building Interactive Websites with JavaScript</h1>
+        <p><strong>Published:</strong> March 5, 2025</p>
+        <img src="../img/artic1.png" alt="Interactive JavaScript" class=""><br>
+        <br>
+        <h3>JavaScript brings life to web pages by responding to user actions in real time.</h3><br>
+        <p>Whether you’re adding simple animations or complex single-page behavior, mastering the basics of the DOM
+            and event handling is key. Below is a short example of how to toggle a navigation menu with JavaScript:</p>
+        <pre><code class="language-javascript">
+const button = document.querySelector(".navbar-toggler");
+button.addEventListener("click", () => {
+    document.querySelector("nav").classList.toggle("open");
+});
         </code></pre>
-
-            <h4>2. Use Flexbox for Layouts</h4>
-            <p>Flexbox simplifies layout design, making it easier to align items. Whether you’re centering elements or
-                creating responsive designs, Flexbox is your best friend.</p>
-            <pre><code class="language-css">
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-        </code></pre>
-
-            <h4>3. Organize Your Styles</h4>
-            <p>Keep your CSS clean and organized. Use comments to group related styles and adopt a consistent naming
-                convention for classes.</p>
-
-            <h4>4. Leverage Variables</h4>
-            <p>CSS variables help maintain consistency. Define reusable values for colors, fonts, and sizes.</p>
-            <pre><code class="language-css">
-:root {
-    --primary-color: #3498db;
-    --font-size: 16px;
-}
-
-button {
-    background-color: var(--primary-color);
-    font-size: var(--font-size);
-}
-        </code></pre>
-
-            <h4>5. Test Responsiveness</h4>
-            <p>Ensure your website looks great on all devices. Use media queries to adjust styles for different screen
-                sizes.</p>
-            <pre><code class="language-css">
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
-}
-        </code></pre>
-
-            <p>CSS can feel overwhelming at first, but with practice, it becomes second nature. Start experimenting, and
-                don’t hesitate to seek inspiration from design galleries or communities!</p>
-            <p>When I first learned CSS, small wins like styling a button kept me motivated. Celebrate those milestones –
-                they add up quickly.</p>
-            <p class="mb-4">Consider creating a style guide for your personal projects. It not only keeps things
-                consistent but also saves time when you revisit the code.</p>
-            <img src="../img/Css_tips.webp" alt="Styled Example" class="img-fluid mb-4">
-            <p id="dynamic-message" class="alert alert-info text-center"></p>
-        </div>
-    </section>
+        <p>Use libraries and frameworks when needed, but don’t forget the power of vanilla JavaScript for quick and
+            efficient interactions.</p>
+        <p>My favorite part about JavaScript is how quickly you can test ideas. A few lines of code can transform a
+            static page into a playful space where users engage longer.</p>
+        <p class="mb-4">During a recent hackathon, I built a real-time form validator that provided instant feedback as
+            users typed. Simple touches like this boost usability and keep visitors coming back.</p>
+        <img src="../img/belfort.png" alt="JavaScript Example" class="img-fluid mb-4">
+        <p id="dynamic-message" class="alert alert-info text-center"></p>
+    </div>
+</section>
 
 
     <!-- Template Main Javascript File -->
@@ -156,9 +108,9 @@ button {
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const messages = [
-                'Ready to style something new?',
-                'Share these tips with a friend!',
-                'Thanks for stopping by!'
+                'Hope these tips inspire your next project!',
+                'Share your favorite JS trick with me!',
+                'Thanks for visiting the blog!'
             ];
             const msg = messages[Math.floor(Math.random() * messages.length)];
             document.getElementById('dynamic-message').textContent = msg;

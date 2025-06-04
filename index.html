@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="canonical" href="https://diegobadelli.com.br/">
+  <meta name="description" content="Professional portfolio of Diego Badelli showcasing skills in engineering, technology and data analytics.">
 
   <!-- Open Graph & Twitter Cards -->
   <meta property="og:title" content="Diego Badelli: Engenharia, Tecnologia e SEO">
@@ -57,8 +58,9 @@
 </head>
 
 <body id="page-top">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
   <div class="page-wrapper">
-    <div class="main-content">
+    <div class="main-content" id="main-content">
       <!-- Navbar -->
       <nav class="navbar navbar-expand-md fixed-top">
         <div class="container">
@@ -74,6 +76,7 @@
               <li class="nav-item"><a class="nav-link js-scroll" href="#skill">Skills</a></li>
               <li class="nav-item"><a class="nav-link js-scroll" href="#Exchange">Academic Exchange</a></li>
               <li class="nav-item"><a class="nav-link js-scroll" href="#portfolio">Portfolio</a></li>
+              <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
               <li class="nav-item"><a class="nav-link js-scroll" href="#updates">Updates</a></li>
               <li class="nav-item"><a class="nav-link js-scroll" href="#contact">Contact</a></li>
             </ul>
@@ -106,7 +109,7 @@
           </div>
           <div class="row about-wrapper">
             <div class="about-left">
-              <img src="img/intro-bg.jpg" alt="Diego Badelli" class="about-img">
+              <img src="img/intro-bg.jpg" alt="Diego Badelli" class="about-img" loading="lazy">
             </div>
             <div class="about-right">
               <p class="lead2">
@@ -198,7 +201,7 @@
           </div>
           <div class="row align-items-center">
             <div class="col-lg-6 text-center" data-aos="fade-up">
-              <img src="img/testimonial-2.jpg" class="img-fluid rounded shadow" alt="Diego Badelli Exchange">
+              <img src="img/testimonial-2.jpg" class="img-fluid rounded shadow" alt="Diego Badelli Exchange" loading="lazy">
             </div>
             <div class="col-lg-6" data-aos="fade-up">
               <p class="lead2">
@@ -340,7 +343,7 @@
                                 <div class="form-group">
                                   <label for="form_name" class="form-text">Firstname *</label>
                                   <input id="form_name" type="text" name="name" class="form-control"
-                                    placeholder="Please enter your firstname *" required="required"
+                                    placeholder="Please enter your firstname *" aria-label="First name" required="required"
                                     data-error="Firstname is required.">
                                   <div class="help-block with-errors"></div>
                                 </div>
@@ -349,7 +352,7 @@
                                 <div class="form-group">
                                   <label for="form_lastname" class="form-text">Lastname *</label>
                                   <input id="form_lastname" type="text" name="surname" class="form-control"
-                                    placeholder="Please enter your lastname *" required="required"
+                                    placeholder="Please enter your lastname *" aria-label="Last name" required="required"
                                     data-error="Lastname is required.">
                                   <div class="help-block with-errors"></div>
                                 </div>
@@ -360,7 +363,7 @@
                                 <div class="form-group">
                                   <label for="form_email" class="form-text">Email *</label>
                                   <input id="form_email" type="email" name="email" class="form-control"
-                                    placeholder="Please enter your email *" required="required"
+                                    placeholder="Please enter your email *" aria-label="Email" required="required"
                                     data-error="Valid email is required.">
                                   <div class="help-block with-errors"></div>
                                 </div>
@@ -371,7 +374,7 @@
                                 <div class="form-group">
                                   <label for="form_message" class="form-text">Message *</label>
                                   <textarea id="form_message" name="message" class="form-control"
-                                    placeholder="Message for me *" rows="4" required="required"
+                                    placeholder="Message for me *" aria-label="Message" rows="4" required="required"
                                     data-error="Please, leave us a message."></textarea>
                                   <div class="help-block with-errors"></div>
                                 </div>
@@ -430,7 +433,7 @@
 
   <!-- Footer -->
   <footer class="footer text-center">
-    <p>&copy; 2025 Diego Badelli. All rights reserved.</p>
+    <p>&copy; <span id="current-year"></span> Diego Badelli. All rights reserved.</p>
   </footer>
 
   <!-- Back to top button -->

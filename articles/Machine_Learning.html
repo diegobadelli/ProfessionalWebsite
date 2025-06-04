@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exploring Machine Learning</title>
+    <meta name="description" content="Introduction to the fundamentals and applications of machine learning.">
     <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../img/favicon/site.webmanifest">
 
 
     <!-- Bootstrap CSS -->
@@ -18,14 +19,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Libraries CSS Files -->
-    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="../lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../lib/animate/animate.min.css" rel="stylesheet">
+    <link href="../lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="../lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
     <!-- Main Stylesheet File -->
     <link href="../css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css">
 
 
 </head>
@@ -56,6 +58,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll" href="../index.html#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../blog.html">Blog</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll" href="../index.html#updates">Updates</a>
@@ -117,11 +122,72 @@
                 computer science or just simple fascination for technological trends, delving into further info on
                 machine learning would prove beneficial considering the exciting avenues it offers.
             </p>
+            <p>One interesting example from my own experience involved using a simple regression model to predict
+                power consumption for a manufacturing line. The insights helped schedule equipment usage and lower
+                electricity costs.</p>
+            <p class="mb-4">As data becomes more accessible, even small businesses can leverage machine learning tools.
+                Cloud-based platforms make experimentation easier than ever.</p>
+            <img src="../img/bannerfirst.jpg" alt="Machine Learning Example" class="img-fluid mb-4">
+            <p>Machine learning thrives on data quality. A common pitfall is using poorly curated datasets, which can lead to misleading results. Clean data is the foundation of every robust model.</p>
+            <p>Data visualization plays a vital role in ML workflows. Charts and dashboards make it easier for stakeholders to grasp model performance and spot trends quickly.</p>
+            <p>Another strategy is to start simple. Baseline models such as linear regression or decision trees offer valuable benchmarks before diving into complex neural networks.</p>
+            <p>Regularization techniques like L1 and L2 help prevent overfitting by penalizing overly complex models.</p>
+            <p>Cross-validation provides a more accurate estimate of model performance across different data subsets.</p>
+            <p>Lastly, don't overlook interpretability. Tools like SHAP and LIME reveal how features influence predictions, which is essential for building trust with nontechnical audiences.</p>
+            <p>To ensure better performance, gather diverse data from multiple sources and invest time in preprocessing steps. Handling missing values and outliers can dramatically improve model accuracy.</p>
+            <p>Feature engineering plays a significant role. Choosing the right features can drastically impact predictive power. Think creatively about what aspects of your data capture important patterns.</p>
+            <p>For example, in a manufacturing plant, sensors capturing temperature and vibration reveal patterns that correlate with product quality.</p>
+            <p>Another real-world case involves computer vision in quality control, where convolutional neural networks check product surfaces for defects and help maintain high standards.</p>
+            <p>These successes highlight the importance of experimentation. Iterating over different algorithms and evaluating metrics such as precision and recall helps refine models to real-world demands.</p>
+            <p>Modern ML frameworks like TensorFlow and PyTorch streamline this process and make it easier to prototype complex ideas.</p>
+            <p>When designing a project pipeline, it's essential to split the dataset into training, validation, and testing sets to avoid overfitting and ensure generalizable results.</p>
+            <p>A confusion matrix is a powerful tool for understanding classification results in detail and guiding further improvement.</p>
+            <p>Beyond the technical details, collaboration between domain experts and data scientists ensures that models align with business needs and deliver true value.</p>
+            <p>For those starting out, many online courses offer free tutorials and guided notebooks. Websites like Coursera, Kaggle, and GitHub provide curated resources to grow your skills.</p>
+            <p>It is also helpful to participate in open-source projects to gain hands-on experience building models with public datasets.</p>
+            <p>Looking ahead, machine learning is advancing with federated learning and on-device inference, preserving privacy while delivering real-time insights.</p>
+            <p>Edge computing devices like IoT sensors now run lightweight ML algorithms, allowing rapid response without relying on cloud connectivity.</p>
+            <p>Generative AI, from text-to-image models to advanced chatbots, is another area pushing boundaries in creativity and automation.</p>
+            <p>Businesses can leverage generative models for content creation, data augmentation, and even designing new products in virtual environments.</p>
+            <p>Finally, staying current is key. Join communities, read research papers, and attend conferences to keep pace with emerging trends.</p>
+            <pre><code class="language-python">
+import pandas as pd
+from sklearn.linear_model import LinearRegression
+
+data = pd.read_csv('sensor.csv')
+X = data[['temp', 'vibration']]
+y = data['quality']
+model = LinearRegression().fit(X, y)
+print('Prediction for new data:', model.predict([[60, 1.2]]))
+</code></pre>
+            <img src="../img/wire_draw.webp" alt="Quality Check" class="img-fluid mb-4">
+            <p>Choosing the right evaluation metric depends on the problem. Accuracy works for balanced datasets, but in scenarios with class imbalance, metrics like F1-score or ROC AUC give better insight.</p>
+            <p>Deployment is often overlooked. Packaging models with tools like Docker ensures consistent environments in production.</p>
+            <p>Monitoring after deployment is equally important. Feedback loops help catch drift and allow updates when input data changes over time.</p>
+            <p>If you enjoy hands-on experimentation, try building a small application with a publicly available dataset such as the UCI Machine Learning Repository.</p>
+            <p>The journey into machine learning is rewarding, especially when you witness your model solve a real issue or open doors to new opportunities.</p>
         </div>
+            <p>In summary, machine learning continues to evolve quickly. Staying curious and practicing regularly is the best way to master this exciting field.</p>
+            <p>With accessible tools and a growing community, now is the perfect time to get involved in ML projects, whether for work or personal exploration.</p>
+            <p>Keep experimenting, share your findings, and don't be afraid to ask questions. The machine learning journey is a collaborative one.</p>
+            <p id="dynamic-message" class="alert alert-info text-center"></p>
     </section>
 
     <!-- Template Main Javascript File -->
-    <script src="js/main.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const messages = [
+                'Machine learning is for everyone!',
+                'Have an ML idea? Give it a try!',
+                'Thanks for exploring these concepts.'
+            ];
+            const msg = messages[Math.floor(Math.random() * messages.length)];
+            document.getElementById('dynamic-message').textContent = msg;
+        });
+    </script>
     <!-- Footer -->
     <footer>
         <p>&copy; Diego Badelli. All rights reserved.</p>
