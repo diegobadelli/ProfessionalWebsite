@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Python Programming: Quick Tips for Beginners</title>
+    <meta name="description" content="Quick Python tips for beginners to improve code quality and productivity.">
     <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../img/favicon/site.webmanifest">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
@@ -17,14 +18,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Libraries CSS Files -->
-    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="../lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../lib/animate/animate.min.css" rel="stylesheet">
+    <link href="../lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="../lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
     <!-- Main Stylesheet File -->
     <link href="../css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css">
 
 
 </head>
@@ -57,6 +59,9 @@
                         <a class="nav-link js-scroll" href="../index.html#portfolio">Portfolio</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="../blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link js-scroll" href="../index.html#updates">Updates</a>
                     </li>
                     <li class="nav-item">
@@ -83,28 +88,28 @@
         <h4>1. Keep Your Code Clean and Readable</h4>
         <p>Python emphasizes readability. Use meaningful variable names and follow PEP 8 guidelines for indentation
             and spacing. For example, prefer:</p>
-        <pre><code>
-<span class="variable">user_age</span> = <span class="number">25</span>  <span class="comment"># Clear and descriptive</span>
+        <pre><code class="language-python">
+user_age = 25  # Clear and descriptive
         </code></pre>
         <p>over:</p>
-        <pre><code>
-<span class="variable">u</span> = <span class="number">25</span>  <span class="comment"># Ambiguous</span>
+        <pre><code class="language-python">
+u = 25  # Ambiguous
         </code></pre>
 
         <h4>2. Leverage Built-in Libraries</h4>
         <p>Python comes with powerful libraries that can save you time. Need to handle dates? Use
             <code>datetime</code>. Working with math? Try <code>math</code>. For example:</p>
-        <pre><code>
-<span class="keyword">from</span> <span class="module">datetime</span> <span class="keyword">import</span> <span class="class">datetime</span>
-<span class="variable">current_date</span> = <span class="class">datetime</span>.<span class="method">now</span>()
-<span class="function">print</span>(<span class="string">f"Today's date is {current_date}"</span>)
+        <pre><code class="language-python">
+from datetime import datetime
+current_date = datetime.now()
+print(f"Today's date is {current_date}")
         </code></pre>
 
         <h4>3. Practice Debugging with Print Statements or Debuggers</h4>
         <p>Don’t let errors frustrate you. Use print statements to check variable values or step through your code
             with a debugger like the one in VS Code. For example:</p>
-        <pre><code>
-<span class="function">print</span>(<span class="string">f"Value of x: {x}"</span>)
+        <pre><code class="language-python">
+print(f"Value of x: {x}")
         </code></pre>
 
         <h4>4. Experiment with Jupyter Notebooks</h4>
@@ -117,12 +122,34 @@
 
         <p>By focusing on these foundational tips, you’ll build a solid base for more advanced Python programming
             challenges. Remember, every expert was once a beginner—so keep experimenting and learning!</p>
+        <p>One trick I love is using list comprehensions to write concise loops. It feels a bit magical once you get the
+            hang of it:</p>
+        <pre><code class="language-python">squares = [x*x for x in range(5)]
+print(squares)
+        </code></pre>
+        <p class="mb-4">Python keeps surprising me with small features that make coding enjoyable. Explore, break things,
+            and have fun!</p>
+        <img src="../img/Python_tips.webp" alt="Python Example" class="img-fluid mb-4">
+        <p id="dynamic-message" class="alert alert-info text-center"></p>
     </div>
 </section>
 
 
     <!-- Template Main Javascript File -->
-    <script src="js/main.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const messages = [
+                'Keep coding and never stop learning!',
+                'Share these Python tips with your peers!',
+                'Thanks for reading this far.'
+            ];
+            const msg = messages[Math.floor(Math.random() * messages.length)];
+            document.getElementById('dynamic-message').textContent = msg;
+        });
+    </script>
     <!-- Footer -->
     <footer>
         <p>&copy; 2024 Diego Badelli. All rights reserved.</p>

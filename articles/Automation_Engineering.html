@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Tips for Beginners: Style Your Website Like a Pro</title>
-    <meta name="description" content="Essential CSS tips for beginners to improve website styling.">
+    <title>The Future of Automation in Engineering</title>
+    <meta name="description" content="How automation technologies are transforming the engineering landscape.">
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
@@ -74,79 +74,36 @@
     <!--/ Nav End /-->
 
     <!-- Article Content -->
-    <section class="article-content">
-        <div class="container">
-            <h1>CSS Tips for Beginners: Style Your Website Like a Pro</h1>
-            <p><strong>Published:</strong> December 18, 2024</p>
-            <img src="../img/css_tips_blog.webp" alt="CSS Tips" class=""><br>
-            <br>
-            <h3>Transform your website design skills with these essential CSS tips tailored for beginners.</h3><br>
-            <p>CSS (Cascading Style Sheets) is the magic that makes websites visually appealing. As an electrical
-                engineer and tech enthusiast, I’ve explored CSS to design intuitive interfaces for projects. Here are my
-                top tips to enhance your CSS skills:</p>
-
-            <h4>1. Master the Box Model</h4>
-            <p>The CSS Box Model is fundamental. Every HTML element is a box, consisting of margins, borders, padding,
-                and content. Understand this to control spacing and layout effectively.</p>
-            <pre><code class="language-css">
-div {
-    margin: 10px; /* Space outside the element */
-    border: 2px solid black; /* Border around the element */
-    padding: 5px; /* Space inside the element */
-}
+<section class="article-content">
+    <div class="container">
+        <h1>The Future of Automation in Engineering</h1>
+        <p><strong>Published:</strong> March 3, 2025</p>
+        <img src="../img/simposio.jpg" alt="Automation in Engineering" class=""><br>
+        <br>
+        <h3>Automation continues to revolutionize industrial processes, from robotics to data-driven monitoring.</h3><br>
+        <p>Engineers today rely on interconnected systems to boost efficiency and safety. Advances in sensors, AI,
+            and robotics allow complex tasks to be executed with minimal human intervention. Staying updated on these
+            technologies is crucial for professionals seeking to optimize production lines and reduce costs.</p>
+        <p>Below is a simple Python snippet illustrating how repetitive tasks can be automated:</p>
+        <pre><code class="language-python">
+import time
+production_steps = ["check sensors", "start motors", "verify output"]
+for step in production_steps:
+    print(f"Running {step}")
+    time.sleep(1)
         </code></pre>
-
-            <h4>2. Use Flexbox for Layouts</h4>
-            <p>Flexbox simplifies layout design, making it easier to align items. Whether you’re centering elements or
-                creating responsive designs, Flexbox is your best friend.</p>
-            <pre><code class="language-css">
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-        </code></pre>
-
-            <h4>3. Organize Your Styles</h4>
-            <p>Keep your CSS clean and organized. Use comments to group related styles and adopt a consistent naming
-                convention for classes.</p>
-
-            <h4>4. Leverage Variables</h4>
-            <p>CSS variables help maintain consistency. Define reusable values for colors, fonts, and sizes.</p>
-            <pre><code class="language-css">
-:root {
-    --primary-color: #3498db;
-    --font-size: 16px;
-}
-
-button {
-    background-color: var(--primary-color);
-    font-size: var(--font-size);
-}
-        </code></pre>
-
-            <h4>5. Test Responsiveness</h4>
-            <p>Ensure your website looks great on all devices. Use media queries to adjust styles for different screen
-                sizes.</p>
-            <pre><code class="language-css">
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
-}
-        </code></pre>
-
-            <p>CSS can feel overwhelming at first, but with practice, it becomes second nature. Start experimenting, and
-                don’t hesitate to seek inspiration from design galleries or communities!</p>
-            <p>When I first learned CSS, small wins like styling a button kept me motivated. Celebrate those milestones –
-                they add up quickly.</p>
-            <p class="mb-4">Consider creating a style guide for your personal projects. It not only keeps things
-                consistent but also saves time when you revisit the code.</p>
-            <img src="../img/Css_tips.webp" alt="Styled Example" class="img-fluid mb-4">
-            <p id="dynamic-message" class="alert alert-info text-center"></p>
-        </div>
-    </section>
+        <p>Whether you work with manufacturing systems or software, understanding automation trends will shape the
+            next generation of engineering solutions.</p>
+        <p>Beyond immediate efficiency gains, automation opens new career paths for engineers willing to blend
+            coding skills with traditional know-how. From customizing PLC programs to integrating IoT sensors,
+            modern automation work is more collaborative and creative than ever.</p>
+        <p class="mb-4">In a recent project I helped retrofit an old production line with machine vision for quality
+            control. The upgrade not only cut down waste, but also provided real-time data for continuous
+            improvement.</p>
+        <img src="../img/wire_draw.webp" alt="Automation Example" class="img-fluid mb-4">
+        <p id="dynamic-message" class="alert alert-info text-center"></p>
+    </div>
+</section>
 
 
     <!-- Template Main Javascript File -->
@@ -156,9 +113,9 @@ button {
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const messages = [
-                'Ready to style something new?',
-                'Share these tips with a friend!',
-                'Thanks for stopping by!'
+                'Thanks for reading!',
+                'Share this article with a colleague!',
+                'Interested in automation? Let\'s connect!'
             ];
             const msg = messages[Math.floor(Math.random() * messages.length)];
             document.getElementById('dynamic-message').textContent = msg;
