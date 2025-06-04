@@ -36,6 +36,27 @@ document.addEventListener("DOMContentLoaded", function () {
                 link: "articles/Css_tips.html",
                 date: "2024-12-18",
             },
+            {
+                title: "The Future of Automation in Engineering",
+                excerpt: "How modern automation technologies are reshaping industry workflows.",
+                image: "img/simposio.jpg",
+                link: "articles/Automation_Engineering.html",
+                date: "2025-03-03",
+            },
+            {
+                title: "Building Interactive Websites with JavaScript",
+                excerpt: "Simple techniques to enhance user experience with vanilla JavaScript.",
+                image: "img/artic1.png",
+                link: "articles/Interactive_JS.html",
+                date: "2025-03-05",
+            },
+            {
+                title: "AI Ethics: Balancing Innovation and Responsibility",
+                excerpt: "A look at ethical considerations when developing artificial intelligence systems.",
+                image: "img/hero-bg.png",
+                link: "articles/AI_Ethics.html",
+                date: "2025-03-07",
+            },
         ];
 
         const blogContainer = document.getElementById("blog-posts");
