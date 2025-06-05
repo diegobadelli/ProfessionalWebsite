@@ -779,6 +779,17 @@ footer {
   margin-top: 56px;
 }
 
+
+/* Reading progress bar */
+.read-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 5px;
+  background: #3a86ff;
+  z-index: 2000;
+
 /* Interactive feedback buttons */
 .interactive-feedback {
   display: flex;
@@ -799,4 +810,5 @@ footer {
 
 .interactive-feedback button:focus {
   outline: 2px solid #0058d4;
+
 }
