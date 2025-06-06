@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting Started with Data Science</title>
+    <meta name="description" content="Beginner-friendly overview of tools and techniques for data analysis.">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../img/favicon/site.webmanifest">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="../css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css">
+</head>
+<body>
+    <section class="article-content container">
+        <h1 class="mb-4">Getting Started with Data Science</h1>
+        <p>Data science combines statistics, programming, and domain knowledge to extract insights from data. The journey usually begins with defining a problem and collecting relevant datasets. Popular libraries like pandas and NumPy help organize data efficiently.</p>
+        <p>Visualization tools such as Matplotlib or Seaborn are invaluable for exploring patterns and trends. They allow you to communicate findings clearly to stakeholders. To start experimenting, you can use Jupyter notebooks for an interactive environment.</p>
+        <p>Once your data is clean, machine learning algorithms provide predictive power. Simple models like linear regression are a great entry point. As you gain experience, try decision trees or clustering techniques.</p>
+        <pre><code class="language-python">import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
+
+data = pd.read_csv('sales.csv')
+X = data[['marketing_spend']]
+y = data['revenue']
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+model = LinearRegression().fit(X_train, y_train)
+print(model.score(X_test, y_test))
+</code></pre>
+        <p>With practice, you can deploy models using frameworks like Flask or FastAPI to serve predictions. Keep experimenting with public datasets, and soon you'll build a solid data science portfolio.</p>
+        <p id="dynamic-message" class="alert alert-info text-center"></p>
+    </section>
+    <script src="../js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const msgs = [
+                'Curiosity drives every good data scientist.',
+                'Practice makes perfect—keep exploring datasets!',
+                'Share your latest data project with the community.'
+            ];
+            document.getElementById('dynamic-message').textContent = msgs[Math.floor(Math.random()*msgs.length)];
+        });
+    </script>
+    <footer>
+        <p>&copy; 2024 Diego Badelli. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -36,6 +36,41 @@ document.addEventListener("DOMContentLoaded", function () {
                 link: "articles/Css_tips.html",
                 date: "2024-12-18",
             },
+            {
+                title: "The Future of Automation in Engineering",
+                excerpt: "How modern automation technologies are reshaping industry workflows.",
+                image: "img/simposio.jpg",
+                link: "articles/Automation_Engineering.html",
+                date: "2025-03-03",
+            },
+            {
+                title: "Building Interactive Websites with JavaScript",
+                excerpt: "Simple techniques to enhance user experience with vanilla JavaScript.",
+                image: "img/artic1.png",
+                link: "articles/Interactive_JS.html",
+                date: "2025-03-05",
+            },
+            {
+                title: "AI Ethics: Balancing Innovation and Responsibility",
+                excerpt: "A look at ethical considerations when developing artificial intelligence systems.",
+                image: "img/hero-bg.png",
+                link: "articles/AI_Ethics.html",
+                date: "2025-03-07",
+            },
+            {
+                title: "Engineering Leadership Skills",
+                excerpt: "Tips for managing technical teams and encouraging innovation.",
+                image: "https://source.unsplash.com/featured/?leadership",
+                link: "articles/Engineering_Leadership.html",
+                date: "2025-05-21",
+            },
+            {
+                title: "Getting Started with Data Science",
+                excerpt: "A quick guide to essential tools and first steps in data science projects.",
+                image: "https://source.unsplash.com/featured/?data,science",
+                link: "articles/Data_Science_Basics.html",
+                date: "2025-05-22",
+            },
         ];
 
         const blogContainer = document.getElementById("blog-posts");

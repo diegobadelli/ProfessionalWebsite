@@ -127,3 +127,28 @@
     });
 
 })(jQuery);
+
+/* Dynamic footer year */
+document.addEventListener('DOMContentLoaded', function () {
+    const yearSpan = document.getElementById('current-year');
+    if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+    }
+
+    document.querySelectorAll('.article-content pre').forEach(pre => {
+        const btn = document.createElement('button');
+        btn.className = 'copy-btn';
+        btn.setAttribute('aria-label', 'Copy code');
+        btn.textContent = 'Copy';
+        pre.appendChild(btn);
+        btn.addEventListener('click', () => {
+            const code = pre.querySelector('code');
+            if (code) {
+                navigator.clipboard.writeText(code.innerText).then(() => {
+                    btn.textContent = 'Copied!';
+                    setTimeout(() => btn.textContent = 'Copy', 2000);
+                });
+            }
+        });
+    });
+});
