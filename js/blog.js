@@ -57,6 +57,20 @@ document.addEventListener("DOMContentLoaded", function () {
                 link: "articles/AI_Ethics.html",
                 date: "2025-03-07",
             },
+            {
+                title: "Engineering Leadership Skills",
+                excerpt: "Tips for managing technical teams and encouraging innovation.",
+                image: "https://source.unsplash.com/featured/?leadership",
+                link: "articles/Engineering_Leadership.html",
+                date: "2025-05-21",
+            },
+            {
+                title: "Getting Started with Data Science",
+                excerpt: "A quick guide to essential tools and first steps in data science projects.",
+                image: "https://source.unsplash.com/featured/?data,science",
+                link: "articles/Data_Science_Basics.html",
+                date: "2025-05-22",
+            },
         ];
 
         const blogContainer = document.getElementById("blog-posts");
