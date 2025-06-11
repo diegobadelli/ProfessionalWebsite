@@ -302,8 +302,13 @@
               </div>
             </div>
           </div>
-          <div class="row" id="blog-posts">
-            <!-- Blog posts will be dynamically loaded here -->
+          <div class="blog-container swiper">
+            <div class="swiper-wrapper" id="blog-posts">
+              <!-- Blog posts will be dynamically loaded here -->
+            </div>
+            <div class="blog-pagination swiper-pagination"></div>
+            <div class="blog-button-next swiper-button-next"></div>
+            <div class="blog-button-prev swiper-button-prev"></div>
           </div>
         </div>
       </section>
@@ -462,7 +467,7 @@
 
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      var swiper = new Swiper(".swiper", {
+      var skillsSwiper = new Swiper(".skills-container", {
         slidesPerView: 3, /* Desktop */
         spaceBetween: 30,
         loop: true, /* Infinite scrolling */
@@ -489,6 +494,28 @@
           }
         }
       });
+
+      var blogContainer = document.querySelector('.blog-container');
+      if (blogContainer) {
+        new Swiper(blogContainer, {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          loop: true,
+          navigation: {
+            nextEl: '.blog-button-next',
+            prevEl: '.blog-button-prev',
+          },
+          pagination: {
+            el: '.blog-pagination',
+            clickable: true,
+          },
+          breakpoints: {
+            0: { slidesPerView: 1, spaceBetween: 10 },
+            768: { slidesPerView: 2, spaceBetween: 20 },
+            1024: { slidesPerView: 3, spaceBetween: 30 }
+          }
+        });
+      }
     });
 
   </script>
