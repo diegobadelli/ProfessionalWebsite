@@ -76,9 +76,12 @@ document.addEventListener("DOMContentLoaded", function () {
         const blogContainer = document.getElementById("blog-posts");
         blogContainer.innerHTML = ""; // Clear previous content
 
+        const isCarousel = blogContainer.classList.contains("swiper-wrapper");
+
         blogPosts.forEach((post) => {
+            const slideClass = isCarousel ? "swiper-slide blog-card" : "col-lg-4 col-md-6 blog-card";
             const blogEntry = `
-                <div class="col-lg-4 col-md-6 blog-card" data-aos="fade-up">
+                <div class="${slideClass}" data-aos="fade-up">
                     <div class="card">
                         <a href="${post.link}">
                             <img src="${post.image}" class="card-img-top" alt="${post.title}">
@@ -98,4 +101,34 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     loadBlogPosts();
+
+    if (document.querySelector('.blog-container')) {
+        new Swiper('.blog-container', {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            loop: true,
+            navigation: {
+                nextEl: '.blog-button-next',
+                prevEl: '.blog-button-prev',
+            },
+            pagination: {
+                el: '.blog-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                }
+            }
+        });
+    }
 });
