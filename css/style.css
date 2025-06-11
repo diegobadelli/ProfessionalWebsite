@@ -1,4 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
+:root {
+  --primary-color: #0A192F;
+  --accent-color: #64FFDA;
+  --highlight-color: #F8D210;
+  --text-color: #333333;
+  --white: #FFFFFF;
+  --muted-text-color: #555555;
+  --bg-color: #FFFFFF;
+  --bg-alt-color: #F8F8F8;
+}
+
 
 /* Global Reset */
 * {
@@ -12,8 +23,8 @@
   position: absolute;
   top: -40px;
   left: 0;
-  background: #000;
-  color: #fff;
+  background: var(--primary-color);
+  color: var(--white);
   padding: 8px 12px;
   z-index: 1000;
   transition: top 0.3s;
@@ -36,30 +47,30 @@ h3,
 h4,
 h5,
 h6 {
-  color: #2c2c2c;
+  color: var(--text-color);
   font-size: 1.5rem;
 }
 
 p {
   font-size: 18px;
-  color: #000;
+  color: var(--text-color);
 }
 
 /* Links */
 a {
-  color: #2c2c2c;
+  color: var(--text-color);
   transition: all 0.5s ease-in-out;
   text-decoration: none;
 }
 
 a:hover {
-  color: #3a86ff;
+  color: var(--accent-color);
 }
 
 /* Buttons */
 .btn-custom {
-  background-color: #3a86ff;
-  color: #fff;
+  background-color: var(--accent-color);
+  color: var(--white);
 }
 
 /* Containers */
@@ -70,7 +81,7 @@ a:hover {
 /* About Me Section */
 #about {
   padding: 5rem 0;
-  background: #ffffff;
+  background: var(--bg-color);
   max-width: 80%;
   margin: auto;
   margin-bottom: 20px;
@@ -116,7 +127,7 @@ a:hover {
 .lead2 {
   font-size: 1.1rem;
   line-height: 1.6;
-  color: #333;
+  color: var(--text-color);
 }
 
 /* Responsive Adjustments */
@@ -170,7 +181,7 @@ a:hover {
   text-align: left;
   font-size: 1.1rem;
   line-height: 1.6;
-  color: #333;
+  color: var(--text-color);
 }
 
 #Exchange .exchange-image {
@@ -210,7 +221,7 @@ a:hover {
   padding: 3rem 0;
   max-width: 90%;
   margin: auto;
-  background: #f8f8f8;
+  background: var(--bg-alt-color);
 }
 
 /* Swiper Container */
@@ -242,21 +253,21 @@ a:hover {
 .skill-box .skill-ico {
   font-size: 2.5rem; /* Increase icon size */
   margin-bottom: 12px;
-  color: #3a86ff;
+  color: var(--accent-color);
 }
 
 /* Title */
 .skill-box .s-title {
   font-size: 22px;
   font-weight: 700;
-  color: #333;
+  color: var(--text-color);
   margin-bottom: 12px;
 }
 
 /* Description */
 .skill-box .s-description {
   font-size: 16px;
-  color: #666;
+  color: var(--muted-text-color);
   line-height: 1.6;
 }
 
@@ -274,7 +285,7 @@ a:hover {
 /* Swiper Navigation Buttons */
 .swiper-button-next,
 .swiper-button-prev {
-  color: #3a86ff;
+  color: var(--accent-color);
   font-size: 18px;
   top: 50%;
   transform: translateY(-50%);
@@ -292,12 +303,12 @@ a:hover {
 .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background: #bbb;
+  background: var(--muted-text-color);
   opacity: 0.5;
 }
 
 .swiper-pagination-bullet-active {
-  background: #3a86ff;
+  background: var(--accent-color);
   opacity: 1;
 }
 
@@ -331,12 +342,12 @@ section p:last-child {
   padding: 3rem 0; /* Slightly reduce padding */
   max-width: 80%;
   margin: auto;
-  background: #f8f8f8;
+  background: var(--bg-alt-color);
   margin-bottom: 20px;
 }
 
 .portfolio-item {
-  background: #f1f1f1;
+  background: var(--bg-alt-color);
   padding: 15px;
   border-radius: 10px;
   text-align: center;
@@ -363,7 +374,7 @@ section p:last-child {
 
 .portfolio-item p {
   font-size: 0.9rem;
-  color: #555;
+  color: var(--muted-text-color);
 }
 
 /* Responsividade - 4 projetos por linha */
@@ -402,7 +413,7 @@ section p:last-child {
 }
 
 .title-a .title-skill {
-  color: #000;
+  color: var(--text-color);
   margin-bottom: 10px;
 }
 
@@ -414,7 +425,7 @@ section p:last-child {
 .line-mf {
   width: 40px;
   height: 5px;
-  background-color: #3a86ff;
+  background-color: var(--accent-color);
   margin: 0 auto;
 }
 
@@ -445,19 +456,19 @@ section p:last-child {
 }
 
 .navbar-brand {
-  color: #ffffff;
+  color: var(--white);
   font-size: 1.5rem;
   font-weight: bold;
 }
 
 .navbar-nav .nav-link {
-  color: #ffffff !important;
+  color: var(--white) !important;
   font-weight: 500;
   transition: color 0.3s ease-in-out;
 }
 
 .navbar-nav .nav-link:hover {
-  color: #f8d210 !important;
+  color: var(--highlight-color) !important;
 }
 
 /* Hero Section */
@@ -493,7 +504,7 @@ section p:last-child {
 .intro-content {
   position: relative;
   z-index: 1;
-  color: #ffffff;
+  color: var(--white);
   text-align: center;
 }
 
@@ -501,14 +512,14 @@ section p:last-child {
   font-size: 4rem;
   font-weight: bold;
   text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
-  color: #f7f8fa;
+  color: var(--bg-alt-color);
 }
 
 .intro-subtitle {
   font-size: 1.5rem;
   font-weight: 300;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-  color: #f7f8fa;
+  color: var(--bg-alt-color);
 }
 
 /* Mouse Scroll */
@@ -577,15 +588,15 @@ section p:last-child {
 
 .card-text {
   font-size: 0.95rem;
-  color: #555;
+  color: var(--muted-text-color);
 }
 
 /* Back to Top */
 .back-to-top {
   position: fixed;
   display: none;
-  background: #fff;
-  color: #4a4a4a;
+  background: var(--white);
+  color: var(--text-color);
   width: 44px;
   height: 44px;
   text-align: center;
@@ -599,7 +610,7 @@ section p:last-child {
 
 .back-to-top i {
   padding-top: 12px;
-  color: #4a4a4a;
+  color: var(--text-color);
 }
 
 /* Remove list dots from contact details */
@@ -640,7 +651,7 @@ section p:last-child {
 /* Footer */
 footer {
   text-align: center;
-  color: #4a4a4a;
+  color: var(--text-color);
   margin-top: 20px;
 }
 
@@ -685,7 +696,7 @@ footer {
 /* Blog Section */
 #blog {
   padding: 5rem 0;
-  background: #ffffff;
+  background: var(--bg-color);
   max-width: 80%;
   margin: auto;
 }
@@ -718,7 +729,7 @@ footer {
   width: 100%;
   height: 200px;
   object-fit: cover;
-  background-color: #f7f8fa;
+  background-color: var(--bg-alt-color);
 }
 
 .card-body {
@@ -732,12 +743,12 @@ footer {
 
 .card-text {
   font-size: 1rem;
-  color: #555;
+  color: var(--muted-text-color);
 }
 
 .blog-date {
   font-size: 0.9rem;
-  color: #777;
+  color: var(--muted-text-color);
   margin-top: 10px;
 }
 
@@ -760,7 +771,7 @@ footer {
   justify-content: center;
   max-width: 80%;
   margin: auto;
-  background: #f8f8f8;
+  background: var(--bg-alt-color);
   margin-bottom: 20px;
 }
 
@@ -772,7 +783,7 @@ footer {
 }
 
 .article-content pre {
-  background: #f8f8f8;
+  background: var(--bg-alt-color);
   padding: 1rem;
   border-radius: 5px;
   overflow-x: auto;
@@ -782,7 +793,7 @@ footer {
   position: absolute;
   top: 8px;
   right: 8px;
-  background: #eee;
+  background: var(--bg-alt-color);
   border: none;
   border-radius: 4px;
   padding: 2px 6px;
@@ -790,7 +801,7 @@ footer {
   cursor: pointer;
 }
 .article-content pre .copy-btn:hover {
-  background: #ddd;
+  background: var(--bg-alt-color);
 }
 
 /* Blog Hero Section */
@@ -813,7 +824,7 @@ footer {
   left: 0;
   width: 0;
   height: 5px;
-  background: #3a86ff;
+  background: var(--accent-color);
   z-index: 2000;
 
 /* Interactive feedback buttons */
@@ -827,15 +838,15 @@ footer {
 
 .interactive-feedback button {
   border: none;
-  background-color: #3a86ff;
-  color: #fff;
+  background-color: var(--accent-color);
+  color: var(--white);
   padding: 0.5rem 1rem;
   border-radius: 4px;
   cursor: pointer;
 }
 
 .interactive-feedback button:focus {
-  outline: 2px solid #0058d4;
+  outline: 2px solid var(--accent-color);
 
   }
 }
