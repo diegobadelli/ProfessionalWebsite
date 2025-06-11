@@ -8,6 +8,7 @@ Welcome to my personal website repository! This project serves as my digital por
 - **Technical Blog:** Articles on **Machine Learning, Python Tips, CSS Styling**, and more.
 - **Interactive Elements:** Includes a **video background, dynamic content loading**, and animated effects.
 - **Responsive Design:** Optimized for desktop and mobile views using **Bootstrap and custom CSS**.
+- **Easy Theming:** Customize the color palette quickly using CSS variables defined in `css/style.css`.
 
 ## 💂️ Project Structure
 
